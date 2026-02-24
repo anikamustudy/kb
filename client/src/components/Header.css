@@ -1,7 +1,7 @@
 /* ── Top Bar ─────────────────────────────────────────────────────────────── */
 .header-topbar {
-  background: #1a2942;
-  color: #cbd5e0;
+  background: linear-gradient(135deg, #8b1a4a 0%, #c0392b 100%);
+  color: rgba(255,255,255,0.9);
   padding: 8px 0;
   font-size: 13px;
 }
@@ -25,13 +25,13 @@
 }
 
 .topbar-item a {
-  color: #cbd5e0;
+  color: rgba(255,255,255,0.9);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .topbar-item a:hover {
-  color: #ff6b35;
+  color: #ffd6e8;
 }
 
 .topbar-icon {
@@ -50,8 +50,8 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #2d3f5c;
-  color: #cbd5e0;
+  background: rgba(255,255,255,0.2);
+  color: white;
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -59,8 +59,8 @@
 }
 
 .social-link:hover {
-  background: #ff6b35;
-  color: white;
+  background: white;
+  color: #d4467a;
 }
 
 /* ── Main Header ─────────────────────────────────────────────────────────── */
@@ -70,12 +70,13 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 16px rgba(212, 70, 122, 0.15);
 }
 
 .header-main {
   background: white;
   padding: 0;
+  border-bottom: 2px solid #fce4ec;
 }
 
 .header-content {
@@ -95,7 +96,7 @@
 
 .logo-icon {
   font-size: 36px;
-  filter: drop-shadow(0 0 4px rgba(255,107,53,0.4));
+  filter: drop-shadow(0 0 4px rgba(212,70,122,0.4));
 }
 
 .logo-text-group {
@@ -105,16 +106,19 @@
 }
 
 .logo-text {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 800;
-  color: #ff6b35;
+  background: linear-gradient(135deg, #d4467a, #e8732a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: -0.5px;
 }
 
 .logo-tagline {
   font-size: 11px;
   font-weight: 500;
-  color: #718096;
+  color: #c084a0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -133,7 +137,7 @@
 .mobile-menu-btn span {
   width: 25px;
   height: 3px;
-  background: #2d3748;
+  background: #d4467a;
   border-radius: 2px;
   transition: all 0.3s ease;
   display: block;
@@ -158,19 +162,19 @@
 
 .nav a {
   text-decoration: none;
-  color: #2d3748;
+  color: #3d1a2b;
   font-weight: 600;
   font-size: 15px;
   padding: 8px 14px;
-  border-radius: 4px;
+  border-radius: 20px;
   transition: color 0.2s, background 0.2s;
   position: relative;
 }
 
 .nav a:hover,
 .nav a.active {
-  color: #ff6b35;
-  background: rgba(255, 107, 53, 0.07);
+  color: #d4467a;
+  background: rgba(212, 70, 122, 0.08);
 }
 
 .cart-link {
@@ -190,7 +194,7 @@
   position: absolute;
   top: 2px;
   right: 2px;
-  background: #ff6b35;
+  background: linear-gradient(135deg, #d4467a, #e8732a);
   color: white;
   border-radius: 50%;
   width: 20px;
@@ -225,7 +229,7 @@
     flex-direction: column;
     padding: 20px;
     gap: 4px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 24px rgba(212, 70, 122, 0.15);
     transform: translateY(-10px);
     opacity: 0;
     visibility: hidden;

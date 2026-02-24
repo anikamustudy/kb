@@ -5,28 +5,34 @@ const router = express.Router();
 router.get('/', (req, res) => {
   const categories = [
     {
-      id: 'lighting',
-      name: 'Lighting',
-      description: 'LED bulbs, tube lights, panel lights and more',
-      icon: '💡'
+      id: 'sari',
+      name: 'Sari',
+      description: 'Silk, cotton, Banarasi and designer saris',
+      icon: '🥻'
     },
     {
-      id: 'fans',
-      name: 'Fans',
-      description: 'Ceiling fans, table fans, exhaust fans',
-      icon: '🌀'
+      id: 'kurtha',
+      name: 'Kurtha',
+      description: 'Anarkali, straight-fit and designer kurthas',
+      icon: '👘'
     },
     {
-      id: 'switches',
-      name: 'Switches & Sockets',
-      description: 'Modular switches, MCBs, sockets',
-      icon: '🔌'
+      id: 'sirak',
+      name: 'Sirak',
+      description: 'Embroidered and printed traditional siraks',
+      icon: '✨'
     },
     {
-      id: 'wires-cables',
-      name: 'Wires & Cables',
-      description: 'Electrical wires, extension cords',
-      icon: '🔗'
+      id: 'dasana',
+      name: 'Dasana',
+      description: 'Bridal and festive dasana sets',
+      icon: '💎'
+    },
+    {
+      id: 'chakla',
+      name: 'Chakla',
+      description: 'Handwoven and silk chaklas',
+      icon: '🌸'
     }
   ];
   

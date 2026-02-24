@@ -8,7 +8,7 @@ const ProductCard = ({ product, addToCart }) => {
       <Link to={`/products/${product.id}`} className="product-image-link">
         <div className="product-image">
           <div className="image-placeholder">
-            <span className="placeholder-icon">📦</span>
+            <span className="placeholder-icon">🧵</span>
           </div>
         </div>
       </Link>

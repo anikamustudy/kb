@@ -1,6 +1,6 @@
 /* ── Page Banner ────────────────────────────────────────────────────── */
 .page-banner {
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #5c0b2b 0%, #9b1742 100%);
   padding: 50px 0;
   color: white;
 }
@@ -23,7 +23,7 @@
 }
 
 .breadcrumb a:hover {
-  color: #ff6b35;
+  color: #ffb6c1;
 }
 
 .breadcrumb span {
@@ -37,7 +37,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #ff6b35;
+  color: #d4467a;
   margin-bottom: 10px;
 }
 .section-label.center { display: block; text-align: center; }
@@ -45,14 +45,14 @@
 .section-heading {
   font-size: 2.2rem;
   font-weight: 800;
-  color: #1a2942;
+  color: #3d1a2b;
   line-height: 1.2;
   margin-bottom: 16px;
 }
 .section-heading.center { text-align: center; }
 
 .section-subtitle {
-  color: #718096;
+  color: #9e6b7a;
   text-align: center;
   margin-bottom: 40px;
   font-size: 1.05rem;
@@ -72,7 +72,7 @@
 }
 
 .intro-image-placeholder {
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #5c0b2b 0%, #9b1742 100%);
   border-radius: 16px;
   height: 400px;
   display: flex;
@@ -86,7 +86,7 @@
 }
 
 .intro-text p {
-  color: #4a5568;
+  color: #6b3a4e;
   line-height: 1.8;
   margin-bottom: 16px;
   font-size: 1rem;
@@ -102,23 +102,23 @@
 .intro-stat {
   text-align: center;
   padding: 16px 8px;
-  background: #f8fafc;
+  background: #fdf5f8;
   border-radius: 10px;
-  border-top: 3px solid #ff6b35;
+  border-top: 3px solid #d4467a;
 }
 
 .intro-stat-num {
   display: block;
   font-size: 1.6rem;
   font-weight: 800;
-  color: #ff6b35;
+  color: #d4467a;
   line-height: 1;
   margin-bottom: 4px;
 }
 
 .intro-stat-label {
   font-size: 11px;
-  color: #718096;
+  color: #9e6b7a;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -127,7 +127,7 @@
 /* ── Mission Section ─────────────────────────────────────────────────── */
 .mission-section {
   padding: 80px 0;
-  background: #f8fafc;
+  background: #fdf5f8;
 }
 
 .mission-grid {
@@ -141,8 +141,8 @@
   border-radius: 14px;
   padding: 36px 28px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  border-bottom: 4px solid #ff6b35;
+  box-shadow: 0 4px 20px rgba(212, 70, 122, 0.08);
+  border-bottom: 4px solid #d4467a;
   transition: transform 0.3s;
 }
 
@@ -158,12 +158,12 @@
 .mission-card h3 {
   font-size: 19px;
   font-weight: 700;
-  color: #1a2942;
+  color: #3d1a2b;
   margin-bottom: 14px;
 }
 
 .mission-card p {
-  color: #718096;
+  color: #9e6b7a;
   line-height: 1.7;
   font-size: 14px;
 }
@@ -186,7 +186,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #ff6b35, #1a3a6e);
+  background: linear-gradient(to bottom, #d4467a, #e8732a);
   transform: translateX(-50%);
 }
 
@@ -204,12 +204,12 @@
 }
 
 .timeline-content {
-  background: #f8fafc;
+  background: #fdf5f8;
   border-radius: 10px;
   padding: 18px 20px;
   max-width: 320px;
   position: relative;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(212, 70, 122, 0.08);
 }
 
 .timeline-content::before {
@@ -219,19 +219,19 @@
   top: 50%;
   transform: translateY(-50%);
   border: 6px solid transparent;
-  border-left-color: #f8fafc;
+  border-left-color: #fdf5f8;
 }
 
 .timeline-item.right .timeline-content::before {
   right: auto;
   left: -12px;
   border-left-color: transparent;
-  border-right-color: #f8fafc;
+  border-right-color: #fdf5f8;
 }
 
 .timeline-year {
   display: inline-block;
-  background: #ff6b35;
+  background: linear-gradient(135deg, #d4467a, #e8732a);
   color: white;
   font-size: 13px;
   font-weight: 700;
@@ -241,7 +241,7 @@
 }
 
 .timeline-content p {
-  color: #4a5568;
+  color: #6b3a4e;
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
@@ -250,7 +250,7 @@
 /* ── Team Section ────────────────────────────────────────────────────── */
 .team-section {
   padding: 80px 0;
-  background: #f8fafc;
+  background: #fdf5f8;
 }
 
 .team-grid {
@@ -265,20 +265,20 @@
   border-radius: 14px;
   padding: 32px 20px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 16px rgba(212, 70, 122, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .team-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(212, 70, 122, 0.15);
 }
 
 .team-avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0f2044, #1a3a6e);
+  background: linear-gradient(135deg, #5c0b2b, #9b1742);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,7 +289,7 @@
 .team-name {
   font-size: 16px;
   font-weight: 700;
-  color: #1a2942;
+  color: #3d1a2b;
   margin-bottom: 4px;
 }
 
@@ -297,7 +297,7 @@
   display: block;
   font-size: 12px;
   font-weight: 600;
-  color: #ff6b35;
+  color: #d4467a;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 12px;
@@ -305,14 +305,14 @@
 
 .team-bio {
   font-size: 13px;
-  color: #718096;
+  color: #9e6b7a;
   line-height: 1.6;
   margin: 0;
 }
 
 /* ── About CTA ───────────────────────────────────────────────────────── */
 .about-cta {
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #5c0b2b 0%, #9b1742 100%);
   padding: 70px 0;
 }
 

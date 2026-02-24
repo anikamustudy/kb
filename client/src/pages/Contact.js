@@ -47,7 +47,7 @@ const Contact = () => {
             <div className="contact-info-card">
               <div className="contact-info-icon">📍</div>
               <h3>Our Address</h3>
-              <p>123, Electrical Market,<br />Dadar, Mumbai – 400 014,<br />Maharashtra, India</p>
+              <p>123, Cloth Market,<br />Indrachowk, Kathmandu – 44600,<br />Nepal</p>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">📞</div>
@@ -58,8 +58,8 @@ const Contact = () => {
             <div className="contact-info-card">
               <div className="contact-info-icon">✉</div>
               <h3>Email</h3>
-              <p><a href="mailto:info@electracon.in">info@electracon.in</a></p>
-              <p><a href="mailto:sales@electracon.in">sales@electracon.in</a></p>
+              <p><a href="mailto:info@kuteshworibastralaya.com">info@kuteshworibastralaya.com</a></p>
+              <p><a href="mailto:orders@kuteshworibastralaya.com">orders@kuteshworibastralaya.com</a></p>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">🕐</div>
@@ -80,7 +80,7 @@ const Contact = () => {
               <span className="section-label">Get In Touch</span>
               <h2 className="section-heading">Send Us a Message</h2>
               <p className="form-intro">
-                Have a question about our products or need a bulk quote? Fill in the form below
+                Have a question about our collections or need a custom order? Fill in the form below
                 and our team will get back to you within 24 hours.
               </p>
 
@@ -144,9 +144,9 @@ const Contact = () => {
                     >
                       <option value="">Select a subject</option>
                       <option value="product-inquiry">Product Inquiry</option>
+                      <option value="custom-order">Custom Order</option>
                       <option value="bulk-order">Bulk Order</option>
-                      <option value="dealer-enquiry">Dealer Enquiry</option>
-                      <option value="support">After-Sales Support</option>
+                      <option value="bridal-collection">Bridal Collection</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
@@ -173,19 +173,19 @@ const Contact = () => {
             {/* Side Info */}
             <div className="contact-side-col">
               <div className="contact-side-card">
-                <h3>Why Choose Electracon?</h3>
+                <h3>Why Choose Kuteshwori Bastralaya?</h3>
                 <ul className="contact-why-list">
-                  <li>✓ 18+ years of experience</li>
-                  <li>✓ ISI &amp; CE certified products</li>
-                  <li>✓ 50+ trusted brands</li>
-                  <li>✓ Pan-India delivery</li>
+                  <li>✓ 14+ years of tradition</li>
+                  <li>✓ Authentic handcrafted garments</li>
+                  <li>✓ 500+ unique designs</li>
+                  <li>✓ Pan-Nepal delivery</li>
                   <li>✓ Competitive pricing</li>
-                  <li>✓ Dedicated support team</li>
+                  <li>✓ Personal styling support</li>
                 </ul>
               </div>
               <div className="contact-side-card">
-                <h3>Bulk Order Enquiry</h3>
-                <p>Planning a project or need wholesale pricing? Our sales team offers special rates for large orders and institutional clients.</p>
+                <h3>Custom & Bulk Orders</h3>
+                <p>Planning a wedding or cultural event? Our design team offers special rates and custom stitching for large orders.</p>
                 <a href="tel:+911234567890" className="btn btn-primary" style={{ display: 'block', textAlign: 'center', marginTop: '16px' }}>
                   📞 Call Sales Team
                 </a>

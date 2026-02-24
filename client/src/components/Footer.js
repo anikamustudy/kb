@@ -12,12 +12,12 @@ const Footer = () => {
             {/* Brand */}
             <div className="footer-section footer-brand">
               <div className="footer-logo">
-                <span className="footer-logo-icon">⚡</span>
-                <span className="footer-logo-text">kuteshwori bastralaya</span>
+                <span className="footer-logo-icon">🌸</span>
+                <span className="footer-logo-text">Kuteshwori Bastralaya</span>
               </div>
               <p className="footer-about">
-                Your trusted partner for premium electrical products and solutions since 2005.
-                Authorised distributor of 50+ leading brands across India.
+                Your trusted destination for premium traditional clothing since 2010.
+                Celebrating the beauty of South Asian fashion with quality and grace.
               </p>
               <div className="footer-social">
                 <a href="https://facebook.com" target="_blank" rel="noreferrer" className="footer-social-link" aria-label="Facebook">f</a>
@@ -43,11 +43,11 @@ const Footer = () => {
             <div className="footer-section">
               <h4 className="footer-heading">Product Categories</h4>
               <ul className="footer-links">
-                <li><Link to="/products?category=lighting">Lighting Solutions</Link></li>
-                <li><Link to="/products?category=fans">Fans &amp; Ventilation</Link></li>
-                <li><Link to="/products?category=switches">Switches &amp; Sockets</Link></li>
-                <li><Link to="/products?category=wires-cables">Wires &amp; Cables</Link></li>
-                <li><Link to="/products">Distribution Boards</Link></li>
+                <li><Link to="/products?category=sari">Sari Collection</Link></li>
+                <li><Link to="/products?category=kurtha">Kurtha Collection</Link></li>
+                <li><Link to="/products?category=sirak">Sirak Collection</Link></li>
+                <li><Link to="/products?category=dasana">Dasana Collection</Link></li>
+                <li><Link to="/products?category=chakla">Chakla Collection</Link></li>
               </ul>
             </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="footer-contact-list">
                 <div className="footer-contact-item">
                   <span className="contact-icon">📍</span>
-                  <span>123, Electrical Market, Dadar,<br />Mumbai – 400 014, Maharashtra</span>
+                  <span>123, Cloth Market, Indrachowk,<br />Kathmandu – 44600, Nepal</span>
                 </div>
                 <div className="footer-contact-item">
                   <span className="contact-icon">📞</span>

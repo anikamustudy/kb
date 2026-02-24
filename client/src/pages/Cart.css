@@ -7,8 +7,8 @@
   text-align: center;
   padding: 80px 20px;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(212, 70, 122, 0.08);
 }
 
 .empty-cart-icon {
@@ -18,12 +18,12 @@
 }
 
 .empty-cart h2 {
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 10px;
 }
 
 .empty-cart p {
-  color: #718096;
+  color: #9e6b7a;
   margin-bottom: 30px;
 }
 
@@ -50,7 +50,7 @@
 .cart-item-image {
   width: 100px;
   height: 100px;
-  background: #f7fafc;
+  background: linear-gradient(135deg, #fdf0f5 0%, #fff0ec 100%);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -65,18 +65,18 @@
 .cart-item-name {
   font-size: 18px;
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
   text-decoration: none;
   display: block;
   margin-bottom: 8px;
 }
 
 .cart-item-name:hover {
-  color: #ff6b35;
+  color: #d4467a;
 }
 
 .cart-item-price {
-  color: #718096;
+  color: #9e6b7a;
   font-size: 16px;
 }
 
@@ -90,8 +90,8 @@
   width: 60px;
   height: 40px;
   text-align: center;
-  border: 2px solid #e2e8f0;
-  border-radius: 5px;
+  border: 2px solid #f0c0d4;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -99,14 +99,14 @@
 .cart-item-total {
   font-size: 20px;
   font-weight: 700;
-  color: #ff6b35;
+  color: #d4467a;
   text-align: right;
 }
 
 .cart-item-remove {
   background: none;
   border: none;
-  color: #cbd5e0;
+  color: #f0c0d4;
   font-size: 24px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -114,7 +114,7 @@
 }
 
 .cart-item-remove:hover {
-  color: #e53e3e;
+  color: #dc2626;
 }
 
 .cart-summary {
@@ -126,7 +126,7 @@
 .cart-summary h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 20px;
 }
 
@@ -134,18 +134,18 @@
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 1px solid #e2e8f0;
-  color: #4a5568;
+  border-bottom: 1px solid #fce4ec;
+  color: #6b3a4e;
 }
 
 .summary-total {
   font-size: 20px;
   font-weight: 700;
-  color: #2d3748;
+  color: #3d1a2b;
   border-bottom: none;
   padding-top: 20px;
   margin-top: 10px;
-  border-top: 2px solid #2d3748;
+  border-top: 2px solid #d4467a;
 }
 
 .cart-summary .btn {

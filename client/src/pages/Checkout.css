@@ -13,7 +13,7 @@
 .order-summary-checkout h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 25px;
 }
 
@@ -24,7 +24,7 @@
 .form-group label {
   display: block;
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 8px;
 }
 
@@ -41,7 +41,7 @@
 .form-group h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 15px;
 }
 
@@ -56,14 +56,14 @@
   align-items: center;
   gap: 10px;
   padding: 15px;
-  border: 2px solid #e2e8f0;
-  border-radius: 8px;
+  border: 2px solid #f0c0d4;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .payment-option:hover {
-  border-color: #ff6b35;
+  border-color: #d4467a;
 }
 
 .payment-option input[type="radio"] {
@@ -74,7 +74,7 @@
 
 .payment-option span {
   font-weight: 500;
-  color: #2d3748;
+  color: #3d1a2b;
 }
 
 .checkout-form .btn {
@@ -96,7 +96,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #fce4ec;
 }
 
 .checkout-item:last-child {
@@ -105,23 +105,23 @@
 
 .checkout-item-name {
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 5px;
 }
 
 .checkout-item-qty {
-  color: #718096;
+  color: #9e6b7a;
   font-size: 14px;
 }
 
 .checkout-item-price {
   font-weight: 700;
-  color: #ff6b35;
+  color: #d4467a;
 }
 
 .summary-divider {
   height: 1px;
-  background: #e2e8f0;
+  background: #fce4ec;
   margin: 20px 0;
 }
 
@@ -129,14 +129,14 @@
   text-align: center;
   padding: 80px 20px;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(212, 70, 122, 0.08);
 }
 
 .success-icon {
   width: 100px;
   height: 100px;
-  background: #38a169;
+  background: linear-gradient(135deg, #d4467a, #e8732a);
   color: white;
   font-size: 60px;
   border-radius: 50%;
@@ -147,18 +147,18 @@
 }
 
 .order-success h1 {
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 15px;
 }
 
 .order-success p {
-  color: #718096;
+  color: #9e6b7a;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 .redirect-message {
-  color: #ff6b35;
+  color: #d4467a;
   font-weight: 600;
   margin-top: 30px;
 }

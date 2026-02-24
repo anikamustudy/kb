@@ -4,21 +4,21 @@
 
 .breadcrumb {
   margin-bottom: 30px;
-  color: #718096;
+  color: #9e6b7a;
 }
 
 .breadcrumb a {
-  color: #718096;
+  color: #9e6b7a;
   text-decoration: none;
   margin: 0 5px;
 }
 
 .breadcrumb a:hover {
-  color: #ff6b35;
+  color: #d4467a;
 }
 
 .breadcrumb span {
-  color: #2d3748;
+  color: #3d1a2b;
   font-weight: 500;
   margin-left: 5px;
 }
@@ -29,15 +29,15 @@
   gap: 60px;
   background: white;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(212, 70, 122, 0.08);
 }
 
 .product-detail-image {
   width: 100%;
   height: 500px;
-  background: #f7fafc;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #fdf0f5 0%, #fff0ec 100%);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,18 +45,18 @@
 
 .product-detail-image .placeholder-icon {
   font-size: 120px;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .product-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 15px;
 }
 
 .product-brand {
-  color: #718096;
+  color: #9e6b7a;
   margin-bottom: 20px;
   font-size: 16px;
 }
@@ -64,7 +64,7 @@
 .product-price-large {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ff6b35;
+  color: #d4467a;
   margin-bottom: 30px;
 }
 
@@ -77,12 +77,12 @@
 .product-specifications h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 10px;
 }
 
 .product-description-full p {
-  color: #4a5568;
+  color: #6b3a4e;
   line-height: 1.6;
 }
 
@@ -92,8 +92,8 @@
 
 .product-specifications li {
   padding: 8px 0;
-  color: #4a5568;
-  border-bottom: 1px solid #e2e8f0;
+  color: #6b3a4e;
+  border-bottom: 1px solid #fce4ec;
 }
 
 .product-specifications li:last-child {
@@ -105,12 +105,12 @@
 }
 
 .in-stock {
-  color: #38a169;
+  color: #16a34a;
   font-weight: 600;
 }
 
 .out-of-stock {
-  color: #e53e3e;
+  color: #dc2626;
   font-weight: 600;
 }
 
@@ -128,7 +128,7 @@
 
 .quantity-selector label {
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
 }
 
 .quantity-controls {
@@ -140,27 +140,27 @@
 .qty-btn {
   width: 40px;
   height: 40px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid #f0c0d4;
   background: white;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
   transition: all 0.3s ease;
 }
 
 .qty-btn:hover {
-  border-color: #ff6b35;
-  color: #ff6b35;
+  border-color: #d4467a;
+  color: #d4467a;
 }
 
 .quantity-controls input {
   width: 80px;
   height: 40px;
   text-align: center;
-  border: 2px solid #e2e8f0;
-  border-radius: 5px;
+  border: 2px solid #f0c0d4;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
 }

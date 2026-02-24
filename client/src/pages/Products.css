@@ -6,7 +6,7 @@
 .page-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 30px;
 }
 
@@ -19,8 +19,8 @@
 .filters-sidebar {
   background: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(212, 70, 122, 0.08);
   height: fit-content;
   position: sticky;
   top: 100px;
@@ -33,7 +33,7 @@
 .filter-section h3 {
   font-size: 16px;
   font-weight: 600;
-  color: #2d3748;
+  color: #3d1a2b;
   margin-bottom: 10px;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .price-inputs span {
-  color: #718096;
+  color: #9e6b7a;
 }
 
 .products-content {
@@ -63,12 +63,12 @@
   margin-bottom: 20px;
   padding: 15px;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(212, 70, 122, 0.06);
 }
 
 .products-header p {
-  color: #718096;
+  color: #9e6b7a;
   font-weight: 500;
 }
 
@@ -76,8 +76,8 @@
   text-align: center;
   padding: 60px 20px;
   background: white;
-  border-radius: 10px;
-  color: #718096;
+  border-radius: 16px;
+  color: #9e6b7a;
 }
 
 @media (max-width: 1024px) {
