@@ -1,7 +1,7 @@
 /* ── Top Bar ─────────────────────────────────────────────────────────────── */
 .header-topbar {
-  background: #1a2942;
-  color: #cbd5e0;
+  background: #5c1335;
+  color: #f9d4e8;
   padding: 8px 0;
   font-size: 13px;
 }
@@ -25,7 +25,7 @@
 }
 
 .topbar-item a {
-  color: #cbd5e0;
+  color: #f9d4e8;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -50,8 +50,8 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #2d3f5c;
-  color: #cbd5e0;
+  background: #7a2048;
+  color: #f9d4e8;
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -59,7 +59,7 @@
 }
 
 .social-link:hover {
-  background: #ff6b35;
+  background: #e84393;
   color: white;
 }
 
@@ -95,7 +95,7 @@
 
 .logo-icon {
   font-size: 36px;
-  filter: drop-shadow(0 0 4px rgba(255,107,53,0.4));
+  filter: drop-shadow(0 0 4px rgba(232,67,147,0.4));
 }
 
 .logo-text-group {
@@ -105,9 +105,9 @@
 }
 
 .logo-text {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 800;
-  color: #ff6b35;
+  color: #e84393;
   letter-spacing: -0.5px;
 }
 
@@ -169,8 +169,8 @@
 
 .nav a:hover,
 .nav a.active {
-  color: #ff6b35;
-  background: rgba(255, 107, 53, 0.07);
+  color: #e84393;
+  background: rgba(232, 67, 147, 0.07);
 }
 
 .cart-link {
@@ -190,7 +190,7 @@
   position: absolute;
   top: 2px;
   right: 2px;
-  background: #ff6b35;
+  background: #e84393;
   color: white;
   border-radius: 50%;
   width: 20px;

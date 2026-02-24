@@ -44,14 +44,14 @@ const Home = ({ addToCart }) => {
         <div className="hero-overlay"></div>
         <div className="container hero-container">
           <div className="hero-content">
-            <span className="hero-badge">⚡ Trusted Electrical Partner Since 2005</span>
+            <span className="hero-badge">🌸 Trusted Clothing Destination Since 2010</span>
             <h1 className="hero-title">
-              Complete Electrical<br />
-              <span className="hero-highlight">Solutions</span> for You
+              Elegant Ethnic Wear<br />
+              <span className="hero-highlight">Crafted</span> for You
             </h1>
             <p className="hero-subtitle">
-              Premium quality electrical products for homes, offices, and industries.
-              Authorised distributor of leading brands with pan-India delivery.
+              Discover premium saris, kurthas, siraks, dasanas, and chaklas.
+              Authentic ethnic clothing with beautiful craftsmanship, delivered across Nepal.
             </p>
             <div className="hero-actions">
               <Link to="/products" className="btn btn-primary btn-lg">
@@ -63,17 +63,17 @@ const Home = ({ addToCart }) => {
             </div>
             <div className="hero-stats">
               <div className="hero-stat">
-                <span className="stat-number">5000+</span>
-                <span className="stat-label">Products</span>
+                <span className="stat-number">500+</span>
+                <span className="stat-label">Designs</span>
               </div>
               <div className="hero-stat-divider"></div>
               <div className="hero-stat">
-                <span className="stat-number">10K+</span>
-                <span className="stat-label">Happy Clients</span>
+                <span className="stat-number">5K+</span>
+                <span className="stat-label">Happy Customers</span>
               </div>
               <div className="hero-stat-divider"></div>
               <div className="hero-stat">
-                <span className="stat-number">18+</span>
+                <span className="stat-number">14+</span>
                 <span className="stat-label">Years Experience</span>
               </div>
             </div>
@@ -89,13 +89,13 @@ const Home = ({ addToCart }) => {
               <span className="strip-icon">🚚</span>
               <div>
                 <h4>Free Delivery</h4>
-                <p>On orders above ₹999</p>
+                <p>On orders above ₹1499</p>
               </div>
             </div>
             <div className="strip-item">
               <span className="strip-icon">✅</span>
               <div>
-                <h4>ISI Certified</h4>
+                <h4>Authentic Fabric</h4>
                 <p>All products quality checked</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ const Home = ({ addToCart }) => {
             <div className="strip-item">
               <span className="strip-icon">💬</span>
               <div>
-                <h4>Expert Support</h4>
+                <h4>Style Support</h4>
                 <p>Mon–Sat, 9 AM–6 PM</p>
               </div>
             </div>
@@ -124,43 +124,43 @@ const Home = ({ addToCart }) => {
             <div className="about-image-col">
               <div className="about-image-box">
                 <div className="about-image-placeholder">
-                  <span className="about-main-icon">⚡</span>
+                  <span className="about-main-icon">🌸</span>
                   <div className="about-badge-box">
-                    <span className="about-badge-number">18+</span>
+                    <span className="about-badge-number">14+</span>
                     <span className="about-badge-text">Years of Trust</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="about-text-col">
-              <span className="section-label">About Electracon</span>
-              <h2 className="section-heading">Your Trusted Electrical<br />Solutions Partner</h2>
+              <span className="section-label">About Kuteshwori Bastralaya</span>
+              <h2 className="section-heading">Your Trusted Ethnic<br />Clothing Destination</h2>
               <p className="about-description">
-                Electracon is a leading electrical products company based in Mumbai, India.
-                Since 2005, we have been providing high-quality electrical products and
-                solutions to residential, commercial, and industrial customers across India.
+                Kuteshwori Bastralaya is a premier ethnic clothing store based in Kathmandu, Nepal.
+                Since 2010, we have been curating the finest traditional garments for women who
+                celebrate culture and style.
               </p>
               <p className="about-description">
-                We are authorised distributors of top brands including Havells, Polycab,
-                Finolex, Legrand, and many more. Our wide range includes wiring accessories,
-                lighting, fans, distribution boards, and industrial electrical equipment.
+                From wedding-ready Banarasi saris to everyday cotton kurthas, our collection
+                spans the full range of South Asian ethnic wear — all sourced from skilled artisans
+                and trusted weavers.
               </p>
               <div className="about-highlights">
                 <div className="highlight-item">
                   <span className="highlight-check">✓</span>
-                  ISI &amp; CE Certified Products
+                  Authentic Handcrafted Fabrics
                 </div>
                 <div className="highlight-item">
                   <span className="highlight-check">✓</span>
-                  Authorised Multi-Brand Distributor
+                  Curated Designer Collections
                 </div>
                 <div className="highlight-item">
                   <span className="highlight-check">✓</span>
-                  Pan-India Delivery Network
+                  Nationwide Delivery
                 </div>
                 <div className="highlight-item">
                   <span className="highlight-check">✓</span>
-                  Dedicated After-Sales Support
+                  Dedicated Style Support
                 </div>
               </div>
               <Link to="/about" className="btn btn-primary">
@@ -200,7 +200,7 @@ const Home = ({ addToCart }) => {
         <div className="container">
           <span className="section-label center">Best Sellers</span>
           <h2 className="section-heading center">Featured Products</h2>
-          <p className="section-subtitle">Explore our top-rated electrical products trusted by thousands of customers</p>
+          <p className="section-subtitle">Explore our top-rated ethnic clothing loved by thousands of customers</p>
           <div className="products-grid grid grid-3">
             {featuredProducts.map(product => (
               <ProductCard
@@ -221,38 +221,38 @@ const Home = ({ addToCart }) => {
       {/* ── Why Choose Us ──────────────────────────────────────────── */}
       <section className="why-section">
         <div className="container">
-          <span className="section-label center light">Why Electracon</span>
+          <span className="section-label center light">Why Kuteshwori</span>
           <h2 className="section-heading center light">Why Choose Us</h2>
           <div className="why-grid">
             <div className="why-card">
               <div className="why-icon">🏆</div>
               <h3>Premium Quality</h3>
-              <p>Every product we sell is carefully sourced from certified manufacturers and rigorously tested before dispatch.</p>
+              <p>Every garment is carefully sourced from trusted weavers and artisans, ensuring lasting beauty and comfort.</p>
             </div>
             <div className="why-card">
               <div className="why-icon">💰</div>
-              <h3>Competitive Pricing</h3>
-              <p>As a direct distributor, we offer the best market prices without compromising on quality or authenticity.</p>
+              <h3>Best Prices</h3>
+              <p>We work directly with artisans and manufacturers so you get the best value without compromising on quality.</p>
             </div>
             <div className="why-card">
-              <div className="why-icon">🔧</div>
-              <h3>Technical Expertise</h3>
-              <p>Our team of electrical engineers can guide you in selecting the right products for any application.</p>
+              <div className="why-icon">🎨</div>
+              <h3>Unique Designs</h3>
+              <p>Our collection features exclusive prints and embroideries you won't find anywhere else.</p>
             </div>
             <div className="why-card">
               <div className="why-icon">🚀</div>
               <h3>Fast Dispatch</h3>
-              <p>Same-day dispatch for orders placed before 2 PM. Delivered safely with proper packaging across India.</p>
+              <p>Orders placed before 2 PM are dispatched the same day, delivered safely with careful packaging.</p>
             </div>
             <div className="why-card">
               <div className="why-icon">🤝</div>
-              <h3>Trusted Brands</h3>
-              <p>Authorised distributor of Havells, Polycab, Finolex, Legrand, Crompton, and 50+ other leading brands.</p>
+              <h3>Trusted Artisans</h3>
+              <p>We partner with skilled weavers and craftspeople who bring decades of expertise to every piece.</p>
             </div>
             <div className="why-card">
               <div className="why-icon">🛡️</div>
-              <h3>Warranty Support</h3>
-              <p>All products come with manufacturer warranty. We handle replacement and warranty claims on your behalf.</p>
+              <h3>Easy Returns</h3>
+              <p>Not satisfied? Our hassle-free 7-day return policy ensures you shop with complete confidence.</p>
             </div>
           </div>
         </div>
@@ -263,8 +263,8 @@ const Home = ({ addToCart }) => {
         <div className="container">
           <div className="cta-content">
             <div className="cta-text">
-              <h2>Looking for Bulk Orders or Project Requirements?</h2>
-              <p>Get special pricing for large orders and infrastructure projects. Our team will assist you with complete electrical procurement.</p>
+              <h2>Looking for Bulk Orders or Custom Designs?</h2>
+              <p>Get special pricing for large orders and custom embroidery. Our team will help you find the perfect outfit for every occasion.</p>
             </div>
             <div className="cta-actions">
               <Link to="/contact" className="btn btn-primary btn-lg">

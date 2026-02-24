@@ -63,7 +63,7 @@
 }
 
 .payment-option:hover {
-  border-color: #ff6b35;
+  border-color: #e84393;
 }
 
 .payment-option input[type="radio"] {
@@ -116,7 +116,7 @@
 
 .checkout-item-price {
   font-weight: 700;
-  color: #ff6b35;
+  color: #e84393;
 }
 
 .summary-divider {
@@ -158,7 +158,7 @@
 }
 
 .redirect-message {
-  color: #ff6b35;
+  color: #e84393;
   font-weight: 600;
   margin-top: 30px;
 }

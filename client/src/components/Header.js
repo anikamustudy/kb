@@ -42,10 +42,10 @@ const Header = ({ cartItemCount }) => {
         <div className="container">
           <div className="header-content">
             <Link to="/" className="logo">
-              <span className="logo-icon">⚡</span>
+              <span className="logo-icon">🌸</span>
               <div className="logo-text-group">
-                <span className="logo-text">kuteshwori bastralaya</span>
-                <span className="logo-tagline">Electrical Solutions</span>
+                <span className="logo-text">Kuteshwori Bastralaya</span>
+                <span className="logo-tagline">Ethnic Clothing Store</span>
               </div>
             </Link>
 

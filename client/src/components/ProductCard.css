@@ -45,7 +45,7 @@
 }
 
 .product-name-link:hover .product-name {
-  color: #ff6b35;
+  color: #e84393;
 }
 
 .product-description {
@@ -65,7 +65,7 @@
 .product-price {
   font-size: 24px;
   font-weight: 700;
-  color: #ff6b35;
+  color: #e84393;
 }
 
 .btn-sm {

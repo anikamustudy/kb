@@ -5,7 +5,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #ff6b35;
+  color: #e84393;
   margin-bottom: 10px;
 }
 .section-label.center { display: block; text-align: center; }
@@ -31,7 +31,7 @@
 /* ── Hero ──────────────────────────────────────────────────────────────── */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 50%, #0d1f42 100%);
+  background: linear-gradient(135deg, #3d0a22 0%, #7b1d4b 50%, #5c1335 100%);
   color: white;
   padding: 100px 0 80px;
   overflow: hidden;
@@ -48,7 +48,7 @@
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,107,53,0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(232,67,147,0.18) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -60,7 +60,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -75,9 +75,9 @@
 
 .hero-badge {
   display: inline-block;
-  background: rgba(255, 107, 53, 0.15);
-  border: 1px solid rgba(255, 107, 53, 0.3);
-  color: #ffb38a;
+  background: rgba(232, 67, 147, 0.18);
+  border: 1px solid rgba(232, 67, 147, 0.35);
+  color: #f9a8d4;
   font-size: 13px;
   font-weight: 600;
   padding: 7px 18px;
@@ -95,7 +95,7 @@
 }
 
 .hero-highlight {
-  color: #ff6b35;
+  color: #f472b6;
 }
 
 .hero-subtitle {
@@ -143,7 +143,7 @@
   display: block;
   font-size: 1.7rem;
   font-weight: 800;
-  color: #ff6b35;
+  color: #f472b6;
   line-height: 1;
   margin-bottom: 4px;
 }
@@ -206,7 +206,7 @@
 /* ── About Section ─────────────────────────────────────────────────────── */
 .about-section {
   padding: 80px 0;
-  background: #f8fafc;
+  background: #fff5f8;
 }
 
 .about-grid {
@@ -223,7 +223,7 @@
 
 .about-image-placeholder {
   position: relative;
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #3d0a22 0%, #7b1d4b 100%);
   border-radius: 16px;
   height: 420px;
   display: flex;
@@ -240,7 +240,7 @@
   position: absolute;
   bottom: 24px;
   left: 24px;
-  background: #ff6b35;
+  background: #e84393;
   color: white;
   padding: 16px 24px;
   border-radius: 12px;
@@ -291,7 +291,7 @@
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: #ff6b35;
+  background: #e84393;
   color: white;
   display: inline-flex;
   align-items: center;
@@ -324,7 +324,7 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: rgba(255,107,53,0.08);
+  background: rgba(232,67,147,0.08);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -353,17 +353,17 @@
 .category-link-text {
   font-size: 13px;
   font-weight: 700;
-  color: #ff6b35;
+  color: #e84393;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .category-card:hover {
-  border-color: #ff6b35;
+  border-color: #e84393;
 }
 
 .category-card:hover .category-icon-wrap {
-  background: rgba(255,107,53,0.15);
+  background: rgba(232,67,147,0.15);
 }
 
 .category-card:hover .category-link-text {
@@ -373,7 +373,7 @@
 /* ── Featured Products Section ─────────────────────────────────────────── */
 .featured-section {
   padding: 80px 0;
-  background: #f8fafc;
+  background: #fff5f8;
 }
 
 .products-grid {
@@ -387,7 +387,7 @@
 /* ── Why Choose Us ─────────────────────────────────────────────────────── */
 .why-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #3d0a22 0%, #7b1d4b 100%);
 }
 
 .why-grid {
@@ -431,7 +431,7 @@
 
 /* ── CTA Banner ────────────────────────────────────────────────────────── */
 .cta-section {
-  background: #ff6b35;
+  background: #e84393;
   padding: 60px 0;
 }
 
@@ -465,10 +465,10 @@
 
 .cta-section .btn-primary {
   background: white;
-  color: #ff6b35;
+  color: #e84393;
 }
 .cta-section .btn-primary:hover {
-  background: #fff5f0;
+  background: #fff0f7;
 }
 
 /* ── Responsive ─────────────────────────────────────────────────────────── */
