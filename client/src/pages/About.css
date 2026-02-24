@@ -1,0 +1,416 @@
+/* ── Page Banner ────────────────────────────────────────────────────── */
+.page-banner {
+  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  padding: 50px 0;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+}
+
+.breadcrumb a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: #ff6b35;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+}
+
+/* ── Section Utilities ───────────────────────────────────────────────── */
+.section-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff6b35;
+  margin-bottom: 10px;
+}
+.section-label.center { display: block; text-align: center; }
+
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a2942;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.section-heading.center { text-align: center; }
+
+.section-subtitle {
+  color: #718096;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+/* ── About Intro ──────────────────────────────────────────────────────── */
+.about-intro {
+  padding: 80px 0;
+  background: white;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.intro-image-placeholder {
+  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  border-radius: 16px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-icon {
+  font-size: 120px;
+  opacity: 0.15;
+}
+
+.intro-text p {
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.intro-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.intro-stat {
+  text-align: center;
+  padding: 16px 8px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border-top: 3px solid #ff6b35;
+}
+
+.intro-stat-num {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ff6b35;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.intro-stat-label {
+  font-size: 11px;
+  color: #718096;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Mission Section ─────────────────────────────────────────────────── */
+.mission-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.mission-card {
+  background: white;
+  border-radius: 14px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border-bottom: 4px solid #ff6b35;
+  transition: transform 0.3s;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px);
+}
+
+.mission-icon {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.mission-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a2942;
+  margin-bottom: 14px;
+}
+
+.mission-card p {
+  color: #718096;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* ── Journey / Timeline ──────────────────────────────────────────────── */
+.journey-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 48px auto 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #ff6b35, #1a3a6e);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+  padding-right: calc(50% + 28px);
+}
+
+.timeline-item.right {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: calc(50% + 28px);
+}
+
+.timeline-content {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 18px 20px;
+  max-width: 320px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: #f8fafc;
+}
+
+.timeline-item.right .timeline-content::before {
+  right: auto;
+  left: -12px;
+  border-left-color: transparent;
+  border-right-color: #f8fafc;
+}
+
+.timeline-year {
+  display: inline-block;
+  background: #ff6b35;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.timeline-content p {
+  color: #4a5568;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Team Section ────────────────────────────────────────────────────── */
+.team-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 14px;
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0f2044, #1a3a6e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto 16px;
+}
+
+.team-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2942;
+  margin-bottom: 4px;
+}
+
+.team-role {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ff6b35;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.team-bio {
+  font-size: 13px;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── About CTA ───────────────────────────────────────────────────────── */
+.about-cta {
+  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  padding: 70px 0;
+}
+
+.about-cta-content {
+  text-align: center;
+}
+
+.about-cta-content h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 14px;
+}
+
+.about-cta-content p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  margin-bottom: 32px;
+}
+
+.about-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about-cta .btn-outline {
+  border-color: rgba(255,255,255,0.5);
+  color: white;
+}
+
+.about-cta .btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .intro-image-placeholder {
+    height: 220px;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-line { display: none; }
+
+  .timeline-item,
+  .timeline-item.right {
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .timeline-content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .timeline-content::before,
+  .timeline-item.right .timeline-content::before {
+    display: none;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem;
+  }
+}

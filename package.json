@@ -1,0 +1,31 @@
+{
+  "name": "eletracon",
+  "version": "1.0.0",
+  "description": "electrical related full stack website",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anikamustudy/eletracon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anikamustudy/eletracon/issues"
+  },
+  "homepage": "https://github.com/anikamustudy/eletracon#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
