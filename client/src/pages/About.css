@@ -1,6 +1,6 @@
 /* ── Page Banner ────────────────────────────────────────────────────── */
 .page-banner {
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #3d0a22 0%, #7b1d4b 100%);
   padding: 50px 0;
   color: white;
 }
@@ -23,7 +23,7 @@
 }
 
 .breadcrumb a:hover {
-  color: #ff6b35;
+  color: #e84393;
 }
 
 .breadcrumb span {
@@ -37,7 +37,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #ff6b35;
+  color: #e84393;
   margin-bottom: 10px;
 }
 .section-label.center { display: block; text-align: center; }
@@ -72,7 +72,7 @@
 }
 
 .intro-image-placeholder {
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #3d0a22 0%, #7b1d4b 100%);
   border-radius: 16px;
   height: 400px;
   display: flex;
@@ -102,16 +102,16 @@
 .intro-stat {
   text-align: center;
   padding: 16px 8px;
-  background: #f8fafc;
+  background: #fff5f8;
   border-radius: 10px;
-  border-top: 3px solid #ff6b35;
+  border-top: 3px solid #e84393;
 }
 
 .intro-stat-num {
   display: block;
   font-size: 1.6rem;
   font-weight: 800;
-  color: #ff6b35;
+  color: #e84393;
   line-height: 1;
   margin-bottom: 4px;
 }
@@ -127,7 +127,7 @@
 /* ── Mission Section ─────────────────────────────────────────────────── */
 .mission-section {
   padding: 80px 0;
-  background: #f8fafc;
+  background: #fff5f8;
 }
 
 .mission-grid {
@@ -142,7 +142,7 @@
   padding: 36px 28px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  border-bottom: 4px solid #ff6b35;
+  border-bottom: 4px solid #e84393;
   transition: transform 0.3s;
 }
 
@@ -186,7 +186,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #ff6b35, #1a3a6e);
+  background: linear-gradient(to bottom, #e84393, #7b1d4b);
   transform: translateX(-50%);
 }
 
@@ -231,7 +231,7 @@
 
 .timeline-year {
   display: inline-block;
-  background: #ff6b35;
+  background: #e84393;
   color: white;
   font-size: 13px;
   font-weight: 700;
@@ -250,7 +250,7 @@
 /* ── Team Section ────────────────────────────────────────────────────── */
 .team-section {
   padding: 80px 0;
-  background: #f8fafc;
+  background: #fff5f8;
 }
 
 .team-grid {
@@ -278,7 +278,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0f2044, #1a3a6e);
+  background: linear-gradient(135deg, #3d0a22, #7b1d4b);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,7 +297,7 @@
   display: block;
   font-size: 12px;
   font-weight: 600;
-  color: #ff6b35;
+  color: #e84393;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 12px;
@@ -312,7 +312,7 @@
 
 /* ── About CTA ───────────────────────────────────────────────────────── */
 .about-cta {
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #3d0a22 0%, #7b1d4b 100%);
   padding: 70px 0;
 }
 

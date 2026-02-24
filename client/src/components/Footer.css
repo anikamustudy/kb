@@ -1,7 +1,7 @@
 /* ── Main Footer ─────────────────────────────────────────────────────── */
 .footer {
-  background: #0f1e33;
-  color: #cbd5e0;
+  background: #3d0a22;
+  color: #f9d4e8;
 }
 
 .footer-main {
@@ -31,11 +31,11 @@
 .footer-logo-text {
   font-size: 22px;
   font-weight: 800;
-  color: #ff6b35;
+  color: #e84393;
 }
 
 .footer-about {
-  color: #94a3b8;
+  color: #f0b8d8;
   line-height: 1.7;
   font-size: 14px;
   margin-bottom: 24px;
@@ -54,7 +54,7 @@
   height: 34px;
   border-radius: 50%;
   background: rgba(255,255,255,0.08);
-  color: #94a3b8;
+  color: #f0b8d8;
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
@@ -62,7 +62,7 @@
 }
 
 .footer-social-link:hover {
-  background: #ff6b35;
+  background: #e84393;
   color: white;
 }
 
@@ -73,7 +73,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #ff6b35;
+  border-bottom: 2px solid #e84393;
   display: inline-block;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .footer-links li a {
-  color: #94a3b8;
+  color: #f0b8d8;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s, padding-left 0.2s;
@@ -112,7 +112,7 @@
   align-items: flex-start;
   gap: 12px;
   font-size: 14px;
-  color: #94a3b8;
+  color: #f0b8d8;
   line-height: 1.6;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .footer-contact-item a {
-  color: #94a3b8;
+  color: #f0b8d8;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -136,7 +136,7 @@
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 18px 0;
-  background: #0a1629;
+  background: #2d0618;
 }
 
 .footer-bottom-content {
@@ -166,7 +166,7 @@
 }
 
 .footer-bottom-links a:hover {
-  color: #ff6b35;
+  color: #e84393;
 }
 
 /* ── Responsive ──────────────────────────────────────────────────────── */

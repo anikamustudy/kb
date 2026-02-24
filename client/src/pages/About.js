@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 import './About.css';
 
 const teamMembers = [
-  { name: 'Rajesh Sharma', role: 'Founder & CEO', icon: '👨‍💼', bio: '20+ years in the electrical industry. Visionary leader who built Electracon from a small shop to a pan-India brand.' },
-  { name: 'Priya Mehta', role: 'Operations Director', icon: '👩‍💼', bio: 'Ensures seamless delivery and customer satisfaction. Oversees supply chain, logistics, and quality control.' },
-  { name: 'Anil Kumar', role: 'Chief Technical Officer', icon: '👨‍🔧', bio: 'Electrical engineer with expertise in industrial and residential solutions. Leads our technical support team.' },
-  { name: 'Sunita Patel', role: 'Sales Manager', icon: '👩‍💼', bio: 'Drives growth across regions. Manages a large network of dealers and institutional clients.' },
+  { name: 'Kamala Sharma', role: 'Founder & Owner', icon: '👩‍💼', bio: '14+ years in ethnic fashion. Passionate curator who built Kuteshwori Bastralaya from a family boutique into a beloved clothing destination.' },
+  { name: 'Sunita Thapa', role: 'Head of Collections', icon: '👩‍🎨', bio: 'Skilled fashion stylist with an eye for timeless designs. Handpicks every sari, kurtha, and garment in our collection.' },
+  { name: 'Rajan Adhikari', role: 'Operations Manager', icon: '👨‍💼', bio: 'Ensures seamless delivery and customer satisfaction. Oversees supply chain, logistics, and quality control.' },
+  { name: 'Priya Khatri', role: 'Customer Relations', icon: '👩‍💼', bio: 'Dedicated to making every customer feel valued. Handles styling advice, returns, and personalised shopping support.' },
 ];
 
 const milestones = [
-  { year: '2005', event: 'Electracon founded in Mumbai with a focus on quality electrical products.' },
-  { year: '2009', event: 'Became authorised distributor for Havells and Polycab.' },
-  { year: '2013', event: 'Expanded to 5 states with a network of 200+ dealers.' },
-  { year: '2017', event: 'Launched online store to serve customers across India.' },
-  { year: '2021', event: 'Reached milestone of 10,000+ satisfied customers.' },
-  { year: '2024', event: 'Pan-India presence with 500+ dealer partners.' },
+  { year: '2010', event: 'Kuteshwori Bastralaya founded in Kathmandu with a focus on authentic ethnic clothing.' },
+  { year: '2013', event: 'Expanded collection to include embroidered saris and designer kurthas.' },
+  { year: '2016', event: 'Opened second store and started partnerships with skilled artisan weavers.' },
+  { year: '2019', event: 'Launched online store to serve customers across Nepal.' },
+  { year: '2022', event: 'Reached milestone of 5,000+ satisfied customers.' },
+  { year: '2024', event: 'Nationwide presence with delivery to all major cities.' },
 ];
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
       <section className="page-banner">
         <div className="container">
           <div className="banner-content">
-            <h1>About Electracon</h1>
+            <h1>About Kuteshwori Bastralaya</h1>
             <div className="breadcrumb">
               <Link to="/">Home</Link>
               <span> / </span>
@@ -42,43 +42,42 @@ const About = () => {
           <div className="intro-grid">
             <div className="intro-image">
               <div className="intro-image-placeholder">
-                <span className="intro-icon">⚡</span>
+                <span className="intro-icon">🌸</span>
               </div>
             </div>
             <div className="intro-text">
               <span className="section-label">Who We Are</span>
-              <h2 className="section-heading">Powering India With Quality Electrical Products</h2>
+              <h2 className="section-heading">Celebrating Tradition Through Elegant Ethnic Wear</h2>
               <p>
-                Electracon is one of India's leading electrical products distribution companies,
-                headquartered in Mumbai. Since our founding in 2005, we have been committed to
-                delivering premium quality electrical products that meet the highest safety standards.
+                Kuteshwori Bastralaya is one of Nepal's most trusted ethnic clothing stores,
+                based in Kathmandu. Since our founding in 2010, we have been passionate about
+                preserving and celebrating the beauty of traditional South Asian clothing.
               </p>
               <p>
-                We are proud authorised distributors of renowned brands including Havells, Polycab,
-                Finolex Cables, Legrand, Crompton, Anchor, and many more. Our curated product
-                portfolio spans wiring accessories, lighting solutions, fans, circuit protection
-                devices, cables, and industrial electrical equipment.
+                Our carefully curated collection spans stunning saris in silk, cotton, chiffon
+                and georgette; elegant kurthas; traditional siraks; beautifully crafted dasanas;
+                and festive chaklas — all sourced from skilled artisans and weavers across the region.
               </p>
               <p>
-                With a growing network of 500+ dealer partners and a pan-India delivery infrastructure,
-                we ensure that quality electrical products reach every corner of the country.
+                With a growing base of over 5,000 happy customers and delivery across Nepal,
+                we are committed to bringing authentic ethnic fashion to every home.
               </p>
               <div className="intro-stats">
                 <div className="intro-stat">
-                  <span className="intro-stat-num">18+</span>
+                  <span className="intro-stat-num">14+</span>
                   <span className="intro-stat-label">Years Experience</span>
                 </div>
                 <div className="intro-stat">
-                  <span className="intro-stat-num">5000+</span>
-                  <span className="intro-stat-label">Products</span>
-                </div>
-                <div className="intro-stat">
-                  <span className="intro-stat-num">10K+</span>
-                  <span className="intro-stat-label">Happy Clients</span>
-                </div>
-                <div className="intro-stat">
                   <span className="intro-stat-num">500+</span>
-                  <span className="intro-stat-label">Dealer Partners</span>
+                  <span className="intro-stat-label">Designs</span>
+                </div>
+                <div className="intro-stat">
+                  <span className="intro-stat-num">5K+</span>
+                  <span className="intro-stat-label">Happy Customers</span>
+                </div>
+                <div className="intro-stat">
+                  <span className="intro-stat-num">50+</span>
+                  <span className="intro-stat-label">Artisan Partners</span>
                 </div>
               </div>
             </div>
@@ -94,24 +93,25 @@ const About = () => {
               <div className="mission-icon">🎯</div>
               <h3>Our Mission</h3>
               <p>
-                To provide every Indian household and business with access to safe, high-quality,
-                and affordable electrical products, backed by expert guidance and reliable after-sales support.
+                To make authentic, beautifully crafted ethnic clothing accessible to every woman —
+                celebrating culture, tradition, and personal style with each garment we offer.
               </p>
             </div>
             <div className="mission-card">
               <div className="mission-icon">🔭</div>
               <h3>Our Vision</h3>
               <p>
-                To be India's most trusted electrical products company — known for integrity,
-                quality, and innovation — while contributing to a safer and more energy-efficient nation.
+                To be Nepal's most loved ethnic clothing destination — known for authenticity,
+                elegance, and a warm personal touch that makes every customer feel special.
               </p>
             </div>
             <div className="mission-card">
               <div className="mission-icon">💎</div>
               <h3>Our Values</h3>
               <p>
-                Quality without compromise. Transparency in every transaction. Respect for customers,
-                partners, and the environment. These principles guide everything we do at Electracon.
+                Authenticity in every fabric. Respect for artisans and their craft. Delight
+                in every customer interaction. These principles guide everything we do at
+                Kuteshwori Bastralaya.
               </p>
             </div>
           </div>
@@ -142,7 +142,7 @@ const About = () => {
         <div className="container">
           <span className="section-label center">Our People</span>
           <h2 className="section-heading center">Meet Our Team</h2>
-          <p className="section-subtitle">Experienced professionals dedicated to serving your electrical needs</p>
+          <p className="section-subtitle">Dedicated professionals passionate about ethnic fashion and customer delight</p>
           <div className="team-grid">
             {teamMembers.map(member => (
               <div key={member.name} className="team-card">
@@ -160,8 +160,8 @@ const About = () => {
       <section className="about-cta">
         <div className="container">
           <div className="about-cta-content">
-            <h2>Ready to Work With Us?</h2>
-            <p>Explore our wide range of electrical products or get in touch for bulk inquiries and project support.</p>
+            <h2>Ready to Explore Our Collection?</h2>
+            <p>Browse our wide range of ethnic clothing or get in touch for bulk orders and custom designs.</p>
             <div className="about-cta-actions">
               <Link to="/products" className="btn btn-primary btn-lg">Shop Products</Link>
               <Link to="/contact" className="btn btn-outline btn-lg">Contact Us</Link>

@@ -1,6 +1,6 @@
 /* ── Page Banner ────────────────────────────────────────────────────── */
 .page-banner {
-  background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 100%);
+  background: linear-gradient(135deg, #3d0a22 0%, #7b1d4b 100%);
   padding: 50px 0;
   color: white;
 }
@@ -23,7 +23,7 @@
 }
 
 .breadcrumb a:hover {
-  color: #ff6b35;
+  color: #e84393;
 }
 
 .breadcrumb span {
@@ -37,7 +37,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #ff6b35;
+  color: #e84393;
   margin-bottom: 10px;
 }
 
@@ -62,11 +62,11 @@
 }
 
 .contact-info-card {
-  background: #f8fafc;
+  background: #fff5f8;
   border-radius: 12px;
   padding: 28px 20px;
   text-align: center;
-  border-top: 4px solid #ff6b35;
+  border-top: 4px solid #e84393;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .contact-info-card a:hover {
-  color: #ff6b35;
+  color: #e84393;
 }
 
 .closed-note {
@@ -162,8 +162,8 @@
 
 .contact-form .form-control:focus {
   outline: none;
-  border-color: #ff6b35;
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  border-color: #e84393;
+  box-shadow: 0 0 0 3px rgba(232, 67, 147, 0.1);
 }
 
 .contact-form textarea.form-control {
@@ -188,7 +188,7 @@
 }
 
 .contact-side-card {
-  background: #f8fafc;
+  background: #fff5f8;
   border-radius: 12px;
   padding: 24px;
 }
@@ -199,7 +199,7 @@
   color: #1a2942;
   margin-bottom: 14px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #ff6b35;
+  border-bottom: 2px solid #e84393;
   display: inline-block;
 }
 
@@ -247,8 +247,8 @@
 }
 
 .contact-social-link:hover {
-  background: #ff6b35;
-  border-color: #ff6b35;
+  background: #e84393;
+  border-color: #e84393;
   color: white;
 }
 
