@@ -109,6 +109,21 @@ const Home = ({ addToCart }) => {
   const [featuredProducts, setFeaturedProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide(prev => (prev + 1) % bannerSlides.length);
+  }, []);
+
+  const prevSlide = () => {
+    setCurrentSlide(prev => (prev - 1 + bannerSlides.length) % bannerSlides.length);
+  };
+
+  /* Auto-play */
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 5000);
+    return () => clearInterval(timer);
+  }, [nextSlide]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -137,6 +152,8 @@ const Home = ({ addToCart }) => {
     );
   }
 
+  const slide = bannerSlides[currentSlide];
+
   return (
     <div className="home">
 
@@ -153,6 +170,40 @@ const Home = ({ addToCart }) => {
             <iframe
               src="https://www.youtube.com/embed/live_stream?channel=UCxxxxxx&autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ"
               title="कुटेश्वरी बस्त्रालय"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        {/* Slider Controls */}
+        <button className="slider-btn slider-prev" onClick={prevSlide} aria-label="अघिल्लो">&#8249;</button>
+        <button className="slider-btn slider-next" onClick={nextSlide} aria-label="अर्को">&#8250;</button>
+
+        {/* Indicator Dots */}
+        <div className="slider-dots">
+          {bannerSlides.map((_, i) => (
+            <button
+              key={i}
+              className={`slider-dot ${i === currentSlide ? 'active' : ''}`}
+              onClick={() => setCurrentSlide(i)}
+              aria-label={`स्लाइड ${i + 1}`}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* ── YouTube Video Section ───────────────────────────────────── */}
+      <section className="video-section">
+        <div className="container">
+          <span className="section-label center">हाम्रो संग्रह</span>
+          <h2 className="section-heading center">हाम्रो पोशाकहरू हेर्नुहोस्</h2>
+          <p className="section-subtitle">कुटेश्वरी बस्त्रालयका विशेष पोशाक संग्रहको झलक</p>
+          <div className="video-wrapper">
+            <iframe
+              className="video-embed"
+              src="https://www.youtube.com/embed/videoseries?list=PLbpi6ZahtOH6Ar_3GPy3workrRE4B6Cz_&autoplay=1&mute=1&loop=1&controls=1&rel=0"
+              title="कुटेश्वरी बस्त्रालय - पोशाक संग्रह"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>

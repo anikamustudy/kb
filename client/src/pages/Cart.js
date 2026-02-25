@@ -71,7 +71,7 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
                 <button 
                   onClick={() => removeItem(item.productId)}
                   className="cart-item-remove"
-                  title="Remove item"
+                  title="हटाउनुहोस्"
                 >
                   ✕
                 </button>

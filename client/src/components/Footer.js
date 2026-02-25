@@ -29,7 +29,7 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div className="footer-section">
-              <h4 className="footer-heading">द्रुत लिंकहरू</h4>
+              <h4 className="footer-heading">लिंकहरू</h4>
               <ul className="footer-links">
                 <li><Link to="/">गृहपृष्ठ</Link></li>
                 <li><Link to="/about">हाम्रो बारेमा</Link></li>
