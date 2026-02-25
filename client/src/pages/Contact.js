@@ -30,11 +30,11 @@ const Contact = () => {
       <section className="page-banner">
         <div className="container">
           <div className="banner-content">
-            <h1>Contact Us</h1>
+            <h1>हामीलाई सम्पर्क गर्नुहोस्</h1>
             <div className="breadcrumb">
-              <Link to="/">Home</Link>
+              <Link to="/">गृहपृष्ठ</Link>
               <span> / </span>
-              <span>Contact Us</span>
+              <span>सम्पर्क</span>
             </div>
           </div>
         </div>
@@ -46,26 +46,26 @@ const Contact = () => {
           <div className="contact-info-grid">
             <div className="contact-info-card">
               <div className="contact-info-icon">📍</div>
-              <h3>Our Address</h3>
-              <p>Kuteshwori Bastralaya,<br />Main Bazaar, Kathmandu – 44600,<br />Nepal</p>
+              <h3>हाम्रो ठेगाना</h3>
+              <p>कुटेश्वरी बस्त्रालय,<br />मुख्य बजार, काठमाडौं – ४४६००,<br />नेपाल</p>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">📞</div>
-              <h3>Phone</h3>
-              <p><a href="tel:+911234567890">+91 12345 67890</a></p>
-              <p><a href="tel:+911234567891">+91 12345 67891</a></p>
+              <h3>फोन</h3>
+              <p><a href="tel:+977-1-4567890">+९७७-१-४५६७८९०</a></p>
+              <p><a href="tel:+977-1-4567891">+९७७-१-४५६७८९१</a></p>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">✉</div>
-              <h3>Email</h3>
-              <p><a href="mailto:info@kuteshworibastralaya.in">info@kuteshworibastralaya.in</a></p>
-              <p><a href="mailto:sales@kuteshworibastralaya.in">sales@kuteshworibastralaya.in</a></p>
+              <h3>इमेल</h3>
+              <p><a href="mailto:info@kuteshworibastralaya.com.np">info@kuteshworibastralaya.com.np</a></p>
+              <p><a href="mailto:sales@kuteshworibastralaya.com.np">sales@kuteshworibastralaya.com.np</a></p>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">🕐</div>
-              <h3>Working Hours</h3>
-              <p>Monday – Saturday<br />9:00 AM – 6:00 PM</p>
-              <p className="closed-note">Sunday: Closed</p>
+              <h3>कार्य समय</h3>
+              <p>सोमबार – शनिबार<br />बिहान ९:०० – साँझ ६:००</p>
+              <p className="closed-note">आइतबार: बन्द</p>
             </div>
           </div>
         </div>
@@ -77,36 +77,36 @@ const Contact = () => {
           <div className="contact-main-grid">
             {/* Form */}
             <div className="contact-form-col">
-              <span className="section-label">Get In Touch</span>
-              <h2 className="section-heading">Send Us a Message</h2>
+              <span className="section-label">सम्पर्कमा आउनुहोस्</span>
+              <h2 className="section-heading">हामीलाई सन्देश पठाउनुहोस्</h2>
               <p className="form-intro">
-                Have a question about our clothing or need a bulk quote? Fill in the form below
-                and our team will get back to you within 24 hours.
+                हाम्रा पोशाकहरू बारे जिज्ञासा छ वा थोक मूल्य चाहिन्छ? तलको फारम भर्नुहोस्
+                र हाम्रो टोली २४ घण्टाभित्र जवाफ दिनेछ।
               </p>
 
               {submitted && (
                 <div className="alert alert-success">
-                  ✅ Thank you! Your message has been sent. We'll get back to you shortly.
+                  ✅ धन्यवाद! तपाईंको सन्देश पठाइयो। हामी छिट्टै जवाफ दिनेछौं।
                 </div>
               )}
 
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="name">Your Name *</label>
+                    <label htmlFor="name">तपाईंको नाम *</label>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       className="form-control"
-                      placeholder="Rajesh Sharma"
+                      placeholder="राजेश शर्मा"
                       value={formData.name}
                       onChange={handleChange}
                       required
                     />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="email">Email Address *</label>
+                    <label htmlFor="email">इमेल ठेगाना *</label>
                     <input
                       type="email"
                       id="email"
@@ -121,19 +121,19 @@ const Contact = () => {
                 </div>
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="phone">Phone Number</label>
+                    <label htmlFor="phone">फोन नम्बर</label>
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
                       className="form-control"
-                      placeholder="+91 98765 43210"
+                      placeholder="+९७७ ९८७६५ ४३२१०"
                       value={formData.phone}
                       onChange={handleChange}
                     />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="subject">Subject *</label>
+                    <label htmlFor="subject">विषय *</label>
                     <select
                       id="subject"
                       name="subject"
@@ -142,30 +142,30 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                     >
-                      <option value="">Select a subject</option>
-                      <option value="product-inquiry">Product Inquiry</option>
-                      <option value="bulk-order">Bulk Order</option>
-                      <option value="custom-design">Custom Design Request</option>
-                      <option value="support">After-Sales Support</option>
-                      <option value="other">Other</option>
+                      <option value="">विषय छान्नुहोस्</option>
+                      <option value="product-inquiry">उत्पादन सम्बन्धी जिज्ञासा</option>
+                      <option value="bulk-order">थोक अर्डर</option>
+                      <option value="custom-design">कस्टम डिजाइन अनुरोध</option>
+                      <option value="support">बिक्री पश्चात सहयोग</option>
+                      <option value="other">अन्य</option>
                     </select>
                   </div>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="message">Message *</label>
+                  <label htmlFor="message">सन्देश *</label>
                   <textarea
                     id="message"
                     name="message"
                     className="form-control"
                     rows="5"
-                    placeholder="Tell us how we can help you..."
+                    placeholder="हामीलाई कसरी मद्दत गर्न सक्छौं बताउनुहोस्..."
                     value={formData.message}
                     onChange={handleChange}
                     required
                   ></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary btn-lg contact-submit">
-                  Send Message →
+                  सन्देश पठाउनुहोस् →
                 </button>
               </form>
             </div>
@@ -173,25 +173,25 @@ const Contact = () => {
             {/* Side Info */}
             <div className="contact-side-col">
               <div className="contact-side-card">
-                <h3>Why Choose Kuteshwori?</h3>
+                <h3>किन कुटेश्वरी छान्ने?</h3>
                 <ul className="contact-why-list">
-                  <li>✓ 14+ years of experience</li>
-                  <li>✓ Authentic handcrafted fabrics</li>
-                  <li>✓ 500+ unique designs</li>
-                  <li>✓ Nationwide delivery</li>
-                  <li>✓ Competitive pricing</li>
-                  <li>✓ Dedicated style support</li>
+                  <li>✓ १४+ वर्षको अनुभव</li>
+                  <li>✓ प्रामाणिक हस्तनिर्मित कपडाहरू</li>
+                  <li>✓ ५००+ अनन्य डिजाइनहरू</li>
+                  <li>✓ देशभर डेलिभरी</li>
+                  <li>✓ प्रतिस्पर्धात्मक मूल्य</li>
+                  <li>✓ समर्पित शैली सहयोग</li>
                 </ul>
               </div>
               <div className="contact-side-card">
-                <h3>Bulk Order Enquiry</h3>
-                <p>Planning a wedding or event? Need wholesale pricing? Our team offers special rates for bulk orders and custom designs.</p>
-                <a href="tel:+911234567890" className="btn btn-primary" style={{ display: 'block', textAlign: 'center', marginTop: '16px' }}>
-                  📞 Call Sales Team
+                <h3>थोक अर्डर जिज्ञासा</h3>
+                <p>विवाह वा उत्सव योजना गर्दै हुनुहुन्छ? थोक मूल्य चाहिन्छ? हाम्रो टोले थोक अर्डर र कस्टम डिजाइनका लागि विशेष दर प्रदान गर्छ।</p>
+                <a href="tel:+977-1-4567890" className="btn btn-primary" style={{ display: 'block', textAlign: 'center', marginTop: '16px' }}>
+                  📞 बिक्री टोलीलाई फोन गर्नुहोस्
                 </a>
               </div>
               <div className="contact-side-card">
-                <h3>Follow Us</h3>
+                <h3>हामीलाई फलो गर्नुहोस्</h3>
                 <div className="contact-social">
                   <a href="https://facebook.com" target="_blank" rel="noreferrer" className="contact-social-link" aria-label="Facebook">f Facebook</a>
                   <a href="https://twitter.com" target="_blank" rel="noreferrer" className="contact-social-link" aria-label="Twitter">t Twitter</a>

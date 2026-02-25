@@ -17,15 +17,15 @@ const Header = ({ cartItemCount }) => {
             <div className="topbar-left">
               <span className="topbar-item">
                 <span className="topbar-icon">📞</span>
-                <a href="tel:+911234567890">+91 12345 67890</a>
+                <a href="tel:+977-1-4567890">+९७७-१-४५६७८९०</a>
               </span>
               <span className="topbar-item">
                 <span className="topbar-icon">✉</span>
-                <a href="mailto:info@kuteshworibastralaya.in">info@kuteshworibastralaya.in</a>
+                <a href="mailto:info@kuteshworibastralaya.com.np">info@kuteshworibastralaya.com.np</a>
               </span>
               <span className="topbar-item">
                 <span className="topbar-icon">🕐</span>
-                Mon–Sat: 9:00 AM – 6:00 PM
+                सोम–शनि: बिहान ९:०० – साँझ ६:००
               </span>
             </div>
             <div className="topbar-right">
@@ -42,17 +42,17 @@ const Header = ({ cartItemCount }) => {
         <div className="container">
           <div className="header-content">
             <Link to="/" className="logo">
-              <span className="logo-icon">🌸</span>
+              <img src="/logo.png" alt="कुटेश्वरी बस्त्रालय" className="logo-img" />
               <div className="logo-text-group">
-                <span className="logo-text">Kuteshwori Bastralaya</span>
-                <span className="logo-tagline">Ethnic Clothing Store</span>
+                <span className="logo-text">कुटेश्वरी बस्त्रालय</span>
+                <span className="logo-tagline">पारम्परिक पोशाक पसल</span>
               </div>
             </Link>
 
             <button
               className={`mobile-menu-btn ${isMenuOpen ? 'open' : ''}`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label="मेनु खोल्नुहोस्"
             >
               <span></span>
               <span></span>
@@ -60,10 +60,10 @@ const Header = ({ cartItemCount }) => {
             </button>
 
             <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-              <Link to="/" className={isActive('/') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/about" className={isActive('/about') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>About Us</Link>
-              <Link to="/products" className={isActive('/products') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Products</Link>
-              <Link to="/contact" className={isActive('/contact') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              <Link to="/" className={isActive('/') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>गृहपृष्ठ</Link>
+              <Link to="/about" className={isActive('/about') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>हाम्रो बारेमा</Link>
+              <Link to="/products" className={isActive('/products') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>उत्पादनहरू</Link>
+              <Link to="/contact" className={isActive('/contact') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>सम्पर्क</Link>
               <Link to="/cart" className={`cart-link ${isActive('/cart') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
                 <span className="cart-icon">🛒</span>
                 {cartItemCount > 0 && (

@@ -7,13 +7,13 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
     return (
       <div className="cart-page">
         <div className="container">
-          <h1 className="page-title">Shopping Cart</h1>
+          <h1 className="page-title">किनमेल कार्ट</h1>
           <div className="empty-cart">
             <div className="empty-cart-icon">🛒</div>
-            <h2>Your cart is empty</h2>
-            <p>Add some products to get started!</p>
+            <h2>तपाईंको कार्ट खाली छ</h2>
+            <p>सुरु गर्न केही उत्पादनहरू थप्नुहोस्!</p>
             <Link to="/products" className="btn btn-primary">
-              Continue Shopping
+              किनमेल जारी राख्नुहोस्
             </Link>
           </div>
         </div>
@@ -24,7 +24,7 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
   return (
     <div className="cart-page">
       <div className="container">
-        <h1 className="page-title">Shopping Cart</h1>
+        <h1 className="page-title">किनमेल कार्ट</h1>
 
         <div className="cart-layout">
           <div className="cart-items">
@@ -40,7 +40,7 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
                   <Link to={`/products/${item.productId}`} className="cart-item-name">
                     {item.name}
                   </Link>
-                  <div className="cart-item-price">₹{item.price}</div>
+                  <div className="cart-item-price">रु.{item.price}</div>
                 </div>
 
                 <div className="cart-item-quantity">
@@ -65,7 +65,7 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
                 </div>
 
                 <div className="cart-item-total">
-                  ₹{item.price * item.quantity}
+                  रु.{item.price * item.quantity}
                 </div>
 
                 <button 
@@ -80,29 +80,29 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
           </div>
 
           <div className="cart-summary card">
-            <h2>Order Summary</h2>
+            <h2>अर्डर सारांश</h2>
             
             <div className="summary-row">
-              <span>Subtotal:</span>
-              <span>₹{cart.total}</span>
+              <span>उप-कुल:</span>
+              <span>रु.{cart.total}</span>
             </div>
             
             <div className="summary-row">
-              <span>Shipping:</span>
-              <span>Free</span>
+              <span>ढुवानी:</span>
+              <span>नि:शुल्क</span>
             </div>
             
             <div className="summary-row summary-total">
-              <span>Total:</span>
-              <span>₹{cart.total}</span>
+              <span>कुल:</span>
+              <span>रु.{cart.total}</span>
             </div>
 
             <Link to="/checkout" className="btn btn-primary btn-lg">
-              Proceed to Checkout
+              भुक्तानीमा जानुहोस्
             </Link>
 
             <Link to="/products" className="btn btn-outline">
-              Continue Shopping
+              किनमेल जारी राख्नुहोस्
             </Link>
           </div>
         </div>
