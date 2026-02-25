@@ -43,8 +43,8 @@ const ProductDetail = ({ addToCart }) => {
     return (
       <div className="container">
         <div className="not-found">
-          <h2>Product not found</h2>
-          <Link to="/products" className="btn btn-primary">Back to Products</Link>
+          <h2>उत्पादन फेला परेन</h2>
+          <Link to="/products" className="btn btn-primary">उत्पादनहरूमा फर्कनुहोस्</Link>
         </div>
       </div>
     );
@@ -54,14 +54,14 @@ const ProductDetail = ({ addToCart }) => {
     <div className="product-detail-page">
       <div className="container">
         <div className="breadcrumb">
-          <Link to="/">Home</Link> / 
-          <Link to="/products">Products</Link> / 
+          <Link to="/">गृहपृष्ठ</Link> / 
+          <Link to="/products">उत्पादनहरू</Link> / 
           <span>{product.name}</span>
         </div>
 
         {addedToCart && (
           <div className="alert alert-success">
-            Product added to cart successfully!
+            उत्पादन कार्टमा सफलतापूर्वक थपियो!
           </div>
         )}
 
@@ -74,16 +74,16 @@ const ProductDetail = ({ addToCart }) => {
 
           <div className="product-detail-info">
             <h1 className="product-title">{product.name}</h1>
-            <div className="product-brand">Brand: {product.brand}</div>
-            <div className="product-price-large">₹{product.price}</div>
+            <div className="product-brand">ब्रान्ड: {product.brand}</div>
+            <div className="product-price-large">रू {product.price}</div>
             
             <div className="product-description-full">
-              <h3>Description</h3>
+              <h3>विवरण</h3>
               <p>{product.description}</p>
             </div>
 
             <div className="product-specifications">
-              <h3>Specifications</h3>
+              <h3>विशिष्टताहरू</h3>
               <ul>
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <li key={key}>
@@ -95,15 +95,15 @@ const ProductDetail = ({ addToCart }) => {
 
             <div className="product-stock">
               {product.stock > 0 ? (
-                <span className="in-stock">✓ In Stock ({product.stock} available)</span>
+                <span className="in-stock">✓ स्टकमा छ ({product.stock} उपलब्ध)</span>
               ) : (
-                <span className="out-of-stock">✗ Out of Stock</span>
+                <span className="out-of-stock">✗ स्टक सकियो</span>
               )}
             </div>
 
             <div className="product-actions">
               <div className="quantity-selector">
-                <label>Quantity:</label>
+                <label>मात्रा:</label>
                 <div className="quantity-controls">
                   <button 
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -132,11 +132,11 @@ const ProductDetail = ({ addToCart }) => {
                 onClick={handleAddToCart}
                 disabled={product.stock === 0}
               >
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
 
               <Link to="/cart" className="btn btn-outline btn-lg">
-                View Cart
+                कार्ट हेर्नुहोस्
               </Link>
             </div>
           </div>

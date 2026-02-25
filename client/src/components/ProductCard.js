@@ -25,7 +25,7 @@ const ProductCard = ({ product, addToCart }) => {
             className="btn btn-primary btn-sm"
             onClick={() => addToCart(product)}
           >
-            Add to Cart
+            कार्टमा थप्नुहोस्
           </button>
         </div>
       </div>

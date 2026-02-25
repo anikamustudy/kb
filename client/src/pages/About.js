@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 import './About.css';
 
 const teamMembers = [
-  { name: 'Kamala Sharma', role: 'Founder & Owner', icon: '👩‍💼', bio: '14+ years in ethnic fashion. Passionate curator who built Kuteshwori Bastralaya from a family boutique into a beloved clothing destination.' },
-  { name: 'Sunita Thapa', role: 'Head of Collections', icon: '👩‍🎨', bio: 'Skilled fashion stylist with an eye for timeless designs. Handpicks every sari, kurtha, and garment in our collection.' },
-  { name: 'Rajan Adhikari', role: 'Operations Manager', icon: '👨‍💼', bio: 'Ensures seamless delivery and customer satisfaction. Oversees supply chain, logistics, and quality control.' },
-  { name: 'Priya Khatri', role: 'Customer Relations', icon: '👩‍💼', bio: 'Dedicated to making every customer feel valued. Handles styling advice, returns, and personalised shopping support.' },
+  { name: 'कमला शर्मा', role: 'संस्थापक तथा मालिक', icon: '👩‍💼', bio: 'जातीय फेसनमा १४+ वर्षको अनुभव। कुटेश्वरी बस्त्रालयलाई पारिवारिक बुटिकबाट प्रिय पोशाक गन्तव्यमा परिणत गर्ने जोशिलो संचालक।' },
+  { name: 'सुनिता थापा', role: 'संग्रह प्रमुख', icon: '👩‍🎨', bio: 'कालातीत डिजाइनका लागि सूक्ष्म दृष्टि भएकी कुशल फेसन स्टाइलिस्ट। हाम्रो संग्रहमा हरेक साडी, कुर्था र पोशाक हातले छान्ने।' },
+  { name: 'राजन अधिकारी', role: 'सञ्चालन प्रबन्धक', icon: '👨‍💼', bio: 'सहज डेलिभरी र ग्राहक सन्तुष्टि सुनिश्चित गर्ने। आपूर्ति श्रृङ्खला, लजिस्टिक्स र गुणस्तर नियन्त्रण सम्हाल्ने।' },
+  { name: 'प्रिया खत्री', role: 'ग्राहक सम्बन्ध', icon: '👩‍💼', bio: 'हरेक ग्राहकलाई मूल्यवान महसुस गराउन समर्पित। शैली सल्लाह, फिर्ता र व्यक्तिगत किनमेल सहयोग व्यवस्थापन।' },
 ];
 
 const milestones = [
-  { year: '2010', event: 'Kuteshwori Bastralaya founded in Kathmandu with a focus on authentic ethnic clothing.' },
-  { year: '2013', event: 'Expanded collection to include embroidered saris and designer kurthas.' },
-  { year: '2016', event: 'Opened second store and started partnerships with skilled artisan weavers.' },
-  { year: '2019', event: 'Launched online store to serve customers across Nepal.' },
-  { year: '2022', event: 'Reached milestone of 5,000+ satisfied customers.' },
-  { year: '2024', event: 'Nationwide presence with delivery to all major cities.' },
+  { year: '२०१०', event: 'काठमाडौंमा प्रामाणिक जातीय पोशाकमा केन्द्रित कुटेश्वरी बस्त्रालयको स्थापना।' },
+  { year: '२०१३', event: 'कढाई साडी र डिजाइनर कुर्थाको संग्रह विस्तार।' },
+  { year: '२०१६', event: 'दोस्रो शाखा खोलियो र कुशल बुनकर कारीगरहरूसँग साझेदारी सुरु।' },
+  { year: '२०१९', event: 'सम्पूर्ण नेपालका ग्राहकहरूको सेवाका लागि अनलाइन पसल सुरु।' },
+  { year: '२०२२', event: '५,०००+ सन्तुष्ट ग्राहकको माइलस्टोन हासिल।' },
+  { year: '२०२४', event: 'नेपालका सबै प्रमुख सहरहरूमा डेलिभरी सहित राष्ट्रव्यापी उपस्थिति।' },
 ];
 
 const About = () => {
@@ -26,11 +26,11 @@ const About = () => {
       <section className="page-banner">
         <div className="container">
           <div className="banner-content">
-            <h1>About Kuteshwori Bastralaya</h1>
+            <h1>कुटेश्वरी बस्त्रालयको बारेमा</h1>
             <div className="breadcrumb">
-              <Link to="/">Home</Link>
+              <Link to="/">गृहपृष्ठ</Link>
               <span> / </span>
-              <span>About Us</span>
+              <span>हाम्रो बारेमा</span>
             </div>
           </div>
         </div>
@@ -42,42 +42,42 @@ const About = () => {
           <div className="intro-grid">
             <div className="intro-image">
               <div className="intro-image-placeholder">
-                <span className="intro-icon">🌸</span>
+                <img src="/logo.png" alt="कुटेश्वरी बस्त्रालय" style={{ maxWidth: '160px', maxHeight: '160px', objectFit: 'contain', opacity: 0.85 }} />
               </div>
             </div>
             <div className="intro-text">
-              <span className="section-label">Who We Are</span>
-              <h2 className="section-heading">Celebrating Tradition Through Elegant Ethnic Wear</h2>
+              <span className="section-label">हामी को हौं</span>
+              <h2 className="section-heading">परम्पराको उत्सव — सुन्दर जातीय पोशाकमार्फत</h2>
               <p>
-                Kuteshwori Bastralaya is one of Nepal's most trusted ethnic clothing stores,
-                based in Kathmandu. Since our founding in 2010, we have been passionate about
-                preserving and celebrating the beauty of traditional South Asian clothing.
+                कुटेश्वरी बस्त्रालय नेपालको सबैभन्दा भरपर्दो जातीय पोशाक पसलहरूमध्ये एक हो,
+                जुन काठमाडौंमा आधारित छ। सन् २०१० मा स्थापनादेखि हामी परम्परागत दक्षिण एशियाली
+                पोशाकको सौन्दर्य सुरक्षित राख्न र मनाउन जुटेका छौं।
               </p>
               <p>
-                Our carefully curated collection spans stunning saris in silk, cotton, chiffon
-                and georgette; elegant kurthas; traditional siraks; beautifully crafted dasanas;
-                and festive chaklas — all sourced from skilled artisans and weavers across the region.
+                हाम्रो संग्रहमा रेशम, सूती, शिफन र जर्जेट साडी; सुन्दर कुर्था; परम्परागत सिराक;
+                हस्तनिर्मित दसाना; र उत्सवी चकला समेट्छ — सबै क्षेत्रका कुशल कारीगर र
+                बुनकरहरूबाट प्राप्त।
               </p>
               <p>
-                With a growing base of over 5,000 happy customers and delivery across Nepal,
-                we are committed to bringing authentic ethnic fashion to every home.
+                ५,०००+ खुसी ग्राहकको बढ्दो आधार र सम्पूर्ण नेपालमा डेलिभरी सहित,
+                हामी हरेक घरमा प्रामाणिक जातीय फेसन पुर्‍याउन प्रतिबद्ध छौं।
               </p>
               <div className="intro-stats">
                 <div className="intro-stat">
-                  <span className="intro-stat-num">14+</span>
-                  <span className="intro-stat-label">Years Experience</span>
+                  <span className="intro-stat-num">१४+</span>
+                  <span className="intro-stat-label">वर्षको अनुभव</span>
                 </div>
                 <div className="intro-stat">
-                  <span className="intro-stat-num">500+</span>
-                  <span className="intro-stat-label">Designs</span>
+                  <span className="intro-stat-num">५००+</span>
+                  <span className="intro-stat-label">डिजाइनहरू</span>
                 </div>
                 <div className="intro-stat">
-                  <span className="intro-stat-num">5K+</span>
-                  <span className="intro-stat-label">Happy Customers</span>
+                  <span className="intro-stat-num">५हजार+</span>
+                  <span className="intro-stat-label">सन्तुष्ट ग्राहक</span>
                 </div>
                 <div className="intro-stat">
-                  <span className="intro-stat-num">50+</span>
-                  <span className="intro-stat-label">Artisan Partners</span>
+                  <span className="intro-stat-num">५०+</span>
+                  <span className="intro-stat-label">कारीगर साझेदार</span>
                 </div>
               </div>
             </div>
@@ -91,27 +91,27 @@ const About = () => {
           <div className="mission-grid">
             <div className="mission-card">
               <div className="mission-icon">🎯</div>
-              <h3>Our Mission</h3>
+              <h3>हाम्रो लक्ष्य</h3>
               <p>
-                To make authentic, beautifully crafted ethnic clothing accessible to every woman —
-                celebrating culture, tradition, and personal style with each garment we offer.
+                प्रत्येक महिलालाई प्रामाणिक, सुन्दर जातीय पोशाक सुलभ बनाउनु —
+                हाम्रो हरेक पोशाकमार्फत संस्कृति, परम्परा र व्यक्तिगत शैलीको उत्सव मनाउनु।
               </p>
             </div>
             <div className="mission-card">
               <div className="mission-icon">🔭</div>
-              <h3>Our Vision</h3>
+              <h3>हाम्रो दृष्टिकोण</h3>
               <p>
-                To be Nepal's most loved ethnic clothing destination — known for authenticity,
-                elegance, and a warm personal touch that makes every customer feel special.
+                नेपालको सबैभन्दा प्रिय जातीय पोशाक गन्तव्य बन्नु — प्रामाणिकता,
+                सौन्दर्य र हार्दिक व्यक्तिगत सेवाका लागि परिचित।
               </p>
             </div>
             <div className="mission-card">
               <div className="mission-icon">💎</div>
-              <h3>Our Values</h3>
+              <h3>हाम्रा मूल्यहरू</h3>
               <p>
-                Authenticity in every fabric. Respect for artisans and their craft. Delight
-                in every customer interaction. These principles guide everything we do at
-                Kuteshwori Bastralaya.
+                हरेक कपडामा प्रामाणिकता। कारीगर र तिनीहरूको शिल्पप्रति सम्मान। हरेक
+                ग्राहक अन्तरक्रियामा आनन्द। यी सिद्धान्तहरूले कुटेश्वरी बस्त्रालयमा
+                हाम्रा सबै काम निर्देशित गर्छन्।
               </p>
             </div>
           </div>
@@ -121,8 +121,8 @@ const About = () => {
       {/* ── Our Journey ──────────────────────────────────────────────── */}
       <section className="journey-section">
         <div className="container">
-          <span className="section-label center">Our Story</span>
-          <h2 className="section-heading center">Our Journey</h2>
+          <span className="section-label center">हाम्रो कथा</span>
+          <h2 className="section-heading center">हाम्रो यात्रा</h2>
           <div className="timeline">
             {milestones.map((m, i) => (
               <div key={m.year} className={`timeline-item ${i % 2 === 0 ? 'left' : 'right'}`}>
@@ -140,9 +140,9 @@ const About = () => {
       {/* ── Team Section ─────────────────────────────────────────────── */}
       <section className="team-section">
         <div className="container">
-          <span className="section-label center">Our People</span>
-          <h2 className="section-heading center">Meet Our Team</h2>
-          <p className="section-subtitle">Dedicated professionals passionate about ethnic fashion and customer delight</p>
+          <span className="section-label center">हाम्रा मानिसहरू</span>
+          <h2 className="section-heading center">हाम्रो टोली</h2>
+          <p className="section-subtitle">जातीय फेसन र ग्राहक सेवाप्रति जोशिला समर्पित पेशेवरहरू</p>
           <div className="team-grid">
             {teamMembers.map(member => (
               <div key={member.name} className="team-card">
@@ -160,11 +160,11 @@ const About = () => {
       <section className="about-cta">
         <div className="container">
           <div className="about-cta-content">
-            <h2>Ready to Explore Our Collection?</h2>
-            <p>Browse our wide range of ethnic clothing or get in touch for bulk orders and custom designs.</p>
+            <h2>हाम्रो संग्रह हेर्न तयार हुनुहुन्छ?</h2>
+            <p>हाम्रा जातीय पोशाकहरू ब्राउज गर्नुहोस् वा थोक अर्डर र कस्टम डिजाइनका लागि सम्पर्क गर्नुहोस्।</p>
             <div className="about-cta-actions">
-              <Link to="/products" className="btn btn-primary btn-lg">Shop Products</Link>
-              <Link to="/contact" className="btn btn-outline btn-lg">Contact Us</Link>
+              <Link to="/products" className="btn btn-primary btn-lg">उत्पादनहरू हेर्नुहोस्</Link>
+              <Link to="/contact" className="btn btn-outline btn-lg">सम्पर्क गर्नुहोस्</Link>
             </div>
           </div>
         </div>
