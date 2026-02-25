@@ -17,11 +17,11 @@ const Header = ({ cartItemCount }) => {
             <div className="topbar-left">
               <span className="topbar-item">
                 <span className="topbar-icon">📞</span>
-                <a href="tel:+911234567890">+९७७ ९८०१२३४५६७</a>
+                <a href="tel:+977-1-4567890">+९७७-१-४५६७८९०</a>
               </span>
               <span className="topbar-item">
                 <span className="topbar-icon">✉</span>
-                <a href="mailto:info@kuteshworibastralaya.com">info@kuteshworibastralaya.com</a>
+                <a href="mailto:info@kuteshworibastralaya.com.np">info@kuteshworibastralaya.com.np</a>
               </span>
               <span className="topbar-item">
                 <span className="topbar-icon">🕐</span>
@@ -45,7 +45,7 @@ const Header = ({ cartItemCount }) => {
               <img src="/logo.png" alt="कुटेश्वरी बस्त्रालय" className="logo-img" />
               <div className="logo-text-group">
                 <span className="logo-text">कुटेश्वरी बस्त्रालय</span>
-                <span className="logo-tagline">जातीय पोशाक पसल</span>
+                <span className="logo-tagline">पारम्परिक पोशाक पसल</span>
               </div>
             </Link>
 

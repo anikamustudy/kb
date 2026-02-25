@@ -93,8 +93,11 @@
   text-decoration: none;
 }
 
-.logo-icon {
-  font-size: 36px;
+.logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
   filter: drop-shadow(0 0 4px rgba(232,67,147,0.4));
 }
 

@@ -61,7 +61,7 @@ const ProductDetail = ({ addToCart }) => {
 
         {addedToCart && (
           <div className="alert alert-success">
-            उत्पादन कार्टमा सफलतापूर्वक थपियो!
+            उत्पादन सफलतापूर्वक कार्टमा थपियो!
           </div>
         )}
 
@@ -75,7 +75,7 @@ const ProductDetail = ({ addToCart }) => {
           <div className="product-detail-info">
             <h1 className="product-title">{product.name}</h1>
             <div className="product-brand">ब्रान्ड: {product.brand}</div>
-            <div className="product-price-large">रू {product.price}</div>
+            <div className="product-price-large">रु.{product.price}</div>
             
             <div className="product-description-full">
               <h3>विवरण</h3>
@@ -83,7 +83,7 @@ const ProductDetail = ({ addToCart }) => {
             </div>
 
             <div className="product-specifications">
-              <h3>विशिष्टताहरू</h3>
+              <h3>विशेषताहरू</h3>
               <ul>
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <li key={key}>
@@ -97,7 +97,7 @@ const ProductDetail = ({ addToCart }) => {
               {product.stock > 0 ? (
                 <span className="in-stock">✓ स्टकमा छ ({product.stock} उपलब्ध)</span>
               ) : (
-                <span className="out-of-stock">✗ स्टक सकियो</span>
+                <span className="out-of-stock">✗ स्टक छैन</span>
               )}
             </div>
 

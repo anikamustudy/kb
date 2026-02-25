@@ -80,6 +80,15 @@
   justify-content: center;
 }
 
+.intro-logo-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+}
+
 .intro-icon {
   font-size: 120px;
   opacity: 0.15;

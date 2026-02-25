@@ -20,7 +20,7 @@ const ProductCard = ({ product, addToCart }) => {
         <p className="product-description">{product.description.substring(0, 60)}...</p>
         
         <div className="product-footer">
-          <div className="product-price">₹{product.price}</div>
+          <div className="product-price">रु.{product.price}</div>
           <button 
             className="btn btn-primary btn-sm"
             onClick={() => addToCart(product)}

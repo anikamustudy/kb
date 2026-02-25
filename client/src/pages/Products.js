@@ -93,7 +93,7 @@ const Products = ({ addToCart }) => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="उत्पादन खोज्नुहोस्..."
+                placeholder="उत्पादनहरू खोज्नुहोस्..."
                 value={filters.search}
                 onChange={(e) => handleFilterChange('search', e.target.value)}
               />
@@ -143,7 +143,7 @@ const Products = ({ addToCart }) => {
           <div className="products-content">
             {products.length === 0 ? (
               <div className="no-products">
-                <p>तपाईंको फिल्टरसँग मेल खाने कुनै उत्पादन फेला परेन।</p>
+                <p>तपाईंको फिल्टरसँग मिल्ने कुनै उत्पादन फेला परेन।</p>
               </div>
             ) : (
               <>

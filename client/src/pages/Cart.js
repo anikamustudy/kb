@@ -40,7 +40,7 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
                   <Link to={`/products/${item.productId}`} className="cart-item-name">
                     {item.name}
                   </Link>
-                  <div className="cart-item-price">रू {item.price}</div>
+                  <div className="cart-item-price">रु.{item.price}</div>
                 </div>
 
                 <div className="cart-item-quantity">
@@ -65,7 +65,7 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
                 </div>
 
                 <div className="cart-item-total">
-                  रू {item.price * item.quantity}
+                  रु.{item.price * item.quantity}
                 </div>
 
                 <button 
@@ -83,22 +83,22 @@ const Cart = ({ cart, updateQuantity, removeItem }) => {
             <h2>अर्डर सारांश</h2>
             
             <div className="summary-row">
-              <span>उप-जम्मा:</span>
-              <span>रू {cart.total}</span>
+              <span>उप-कुल:</span>
+              <span>रु.{cart.total}</span>
             </div>
             
             <div className="summary-row">
               <span>ढुवानी:</span>
-              <span>निःशुल्क</span>
+              <span>नि:शुल्क</span>
             </div>
             
             <div className="summary-row summary-total">
-              <span>जम्मा:</span>
-              <span>रू {cart.total}</span>
+              <span>कुल:</span>
+              <span>रु.{cart.total}</span>
             </div>
 
             <Link to="/checkout" className="btn btn-primary btn-lg">
-              चेकआउट गर्नुहोस्
+              भुक्तानीमा जानुहोस्
             </Link>
 
             <Link to="/products" className="btn btn-outline">

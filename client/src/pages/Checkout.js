@@ -50,8 +50,8 @@ const Checkout = ({ cart, clearCart }) => {
           <div className="order-success">
             <div className="success-icon">✓</div>
             <h1>अर्डर सफलतापूर्वक राखियो!</h1>
-            <p>तपाईंको अर्डरका लागि धन्यवाद। छिट्टै पुष्टिकरण इमेल पाउनुहुनेछ।</p>
-            <p className="redirect-message">गृहपृष्ठमा फर्कँदै...</p>
+            <p>तपाईंको अर्डरको लागि धन्यवाद। छिट्टै पुष्टि इमेल प्राप्त हुनेछ।</p>
+            <p className="redirect-message">गृहपृष्ठमा फर्किँदै...</p>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ const Checkout = ({ cart, clearCart }) => {
   return (
     <div className="checkout-page">
       <div className="container">
-        <h1 className="page-title">चेकआउट</h1>
+        <h1 className="page-title">भुक्तानी</h1>
 
         <div className="checkout-layout">
           <div className="checkout-form card">
@@ -166,7 +166,7 @@ const Checkout = ({ cart, clearCart }) => {
                       checked={formData.paymentMethod === 'cod'}
                       onChange={handleChange}
                     />
-                    <span>डेलिभरीमा नगद भुक्तानी</span>
+                    <span>घरमा नगद भुक्तानी</span>
                   </label>
 
                   <label className="payment-option">
@@ -183,7 +183,7 @@ const Checkout = ({ cart, clearCart }) => {
               </div>
 
               <button type="submit" className="btn btn-primary btn-lg">
-                अर्डर राख्नुहोस्
+                अर्डर गर्नुहोस्
               </button>
             </form>
           </div>
@@ -198,7 +198,7 @@ const Checkout = ({ cart, clearCart }) => {
                     <div className="checkout-item-name">{item.name}</div>
                     <div className="checkout-item-qty">मात्रा: {item.quantity}</div>
                   </div>
-                  <div className="checkout-item-price">रू {item.price * item.quantity}</div>
+                  <div className="checkout-item-price">रु.{item.price * item.quantity}</div>
                 </div>
               ))}
             </div>
@@ -206,18 +206,18 @@ const Checkout = ({ cart, clearCart }) => {
             <div className="summary-divider"></div>
 
             <div className="summary-row">
-              <span>उप-जम्मा:</span>
-              <span>रू {cart.total}</span>
+              <span>उप-कुल:</span>
+              <span>रु.{cart.total}</span>
             </div>
             
             <div className="summary-row">
               <span>ढुवानी:</span>
-              <span>निःशुल्क</span>
+              <span>नि:शुल्क</span>
             </div>
             
             <div className="summary-row summary-total">
-              <span>जम्मा:</span>
-              <span>रू {cart.total}</span>
+              <span>कुल:</span>
+              <span>रु.{cart.total}</span>
             </div>
           </div>
         </div>

@@ -124,6 +124,123 @@
   font-size: 1.05rem;
 }
 
+/* ── Banner Slider ─────────────────────────────────────────────────────── */
+.banner-slider {
+  position: relative;
+  color: white;
+  padding: 100px 0 80px;
+  overflow: hidden;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  transition: background 0.6s ease;
+}
+
+.banner-slider-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.18);
+  pointer-events: none;
+}
+
+.banner-slider-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Slider navigation arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.35);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s, border-color 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+
+.slider-arrow:hover {
+  background: rgba(255,255,255,0.3);
+  border-color: white;
+}
+
+.slider-arrow-prev { left: 20px; }
+.slider-arrow-next { right: 20px; }
+
+/* Indicator dots */
+.slider-dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  border: 2px solid rgba(255,255,255,0.6);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.slider-dot.active {
+  background: white;
+  transform: scale(1.3);
+}
+
+/* ── Video Section ─────────────────────────────────────────────────────── */
+.video-section {
+  padding: 80px 0;
+  background: #f7f3ff;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+  margin-top: 32px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+
+/* About logo image */
+.about-logo-img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  padding: 16px;
+}
+
 /* ── Hero ──────────────────────────────────────────────────────────────── */
 .hero {
   position: relative;
@@ -135,6 +252,7 @@
   display: flex;
   align-items: center;
 }
+
 
 .hero::before {
   content: '';
@@ -597,6 +715,20 @@
     padding: 60px 0;
     min-height: unset;
   }
+
+  .banner-slider {
+    padding: 60px 0 70px;
+    min-height: unset;
+  }
+
+  .slider-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .slider-arrow-prev { left: 10px; }
+  .slider-arrow-next { right: 10px; }
 
   .hero-title {
     font-size: 2.2rem;
