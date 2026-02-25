@@ -49,9 +49,9 @@ const Checkout = ({ cart, clearCart }) => {
         <div className="container">
           <div className="order-success">
             <div className="success-icon">✓</div>
-            <h1>Order Placed Successfully!</h1>
-            <p>Thank you for your order. You will receive a confirmation email shortly.</p>
-            <p className="redirect-message">Redirecting to home page...</p>
+            <h1>अर्डर सफलतापूर्वक राखियो!</h1>
+            <p>तपाईंको अर्डरका लागि धन्यवाद। छिट्टै पुष्टिकरण इमेल पाउनुहुनेछ।</p>
+            <p className="redirect-message">गृहपृष्ठमा फर्कँदै...</p>
           </div>
         </div>
       </div>
@@ -61,14 +61,14 @@ const Checkout = ({ cart, clearCart }) => {
   return (
     <div className="checkout-page">
       <div className="container">
-        <h1 className="page-title">Checkout</h1>
+        <h1 className="page-title">चेकआउट</h1>
 
         <div className="checkout-layout">
           <div className="checkout-form card">
-            <h2>Shipping Information</h2>
+            <h2>ढुवानी जानकारी</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label>Full Name *</label>
+                <label>पूरा नाम *</label>
                 <input
                   type="text"
                   name="fullName"
@@ -81,7 +81,7 @@ const Checkout = ({ cart, clearCart }) => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label>Email *</label>
+                  <label>इमेल *</label>
                   <input
                     type="email"
                     name="email"
@@ -93,7 +93,7 @@ const Checkout = ({ cart, clearCart }) => {
                 </div>
 
                 <div className="form-group">
-                  <label>Phone *</label>
+                  <label>फोन *</label>
                   <input
                     type="tel"
                     name="phone"
@@ -106,7 +106,7 @@ const Checkout = ({ cart, clearCart }) => {
               </div>
 
               <div className="form-group">
-                <label>Address *</label>
+                <label>ठेगाना *</label>
                 <textarea
                   name="address"
                   className="form-control"
@@ -119,7 +119,7 @@ const Checkout = ({ cart, clearCart }) => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label>City *</label>
+                  <label>सहर *</label>
                   <input
                     type="text"
                     name="city"
@@ -131,7 +131,7 @@ const Checkout = ({ cart, clearCart }) => {
                 </div>
 
                 <div className="form-group">
-                  <label>State *</label>
+                  <label>प्रदेश *</label>
                   <input
                     type="text"
                     name="state"
@@ -143,7 +143,7 @@ const Checkout = ({ cart, clearCart }) => {
                 </div>
 
                 <div className="form-group">
-                  <label>Pincode *</label>
+                  <label>पिनकोड *</label>
                   <input
                     type="text"
                     name="pincode"
@@ -156,7 +156,7 @@ const Checkout = ({ cart, clearCart }) => {
               </div>
 
               <div className="form-group">
-                <h3>Payment Method</h3>
+                <h3>भुक्तानी विधि</h3>
                 <div className="payment-methods">
                   <label className="payment-option">
                     <input
@@ -166,7 +166,7 @@ const Checkout = ({ cart, clearCart }) => {
                       checked={formData.paymentMethod === 'cod'}
                       onChange={handleChange}
                     />
-                    <span>Cash on Delivery</span>
+                    <span>डेलिभरीमा नगद भुक्तानी</span>
                   </label>
 
                   <label className="payment-option">
@@ -177,28 +177,28 @@ const Checkout = ({ cart, clearCart }) => {
                       checked={formData.paymentMethod === 'online'}
                       onChange={handleChange}
                     />
-                    <span>Online Payment</span>
+                    <span>अनलाइन भुक्तानी</span>
                   </label>
                 </div>
               </div>
 
               <button type="submit" className="btn btn-primary btn-lg">
-                Place Order
+                अर्डर राख्नुहोस्
               </button>
             </form>
           </div>
 
           <div className="order-summary-checkout card">
-            <h2>Order Summary</h2>
+            <h2>अर्डर सारांश</h2>
             
             <div className="checkout-items">
               {cart.items.map(item => (
                 <div key={item.productId} className="checkout-item">
                   <div className="checkout-item-details">
                     <div className="checkout-item-name">{item.name}</div>
-                    <div className="checkout-item-qty">Qty: {item.quantity}</div>
+                    <div className="checkout-item-qty">मात्रा: {item.quantity}</div>
                   </div>
-                  <div className="checkout-item-price">₹{item.price * item.quantity}</div>
+                  <div className="checkout-item-price">रू {item.price * item.quantity}</div>
                 </div>
               ))}
             </div>
@@ -206,18 +206,18 @@ const Checkout = ({ cart, clearCart }) => {
             <div className="summary-divider"></div>
 
             <div className="summary-row">
-              <span>Subtotal:</span>
-              <span>₹{cart.total}</span>
+              <span>उप-जम्मा:</span>
+              <span>रू {cart.total}</span>
             </div>
             
             <div className="summary-row">
-              <span>Shipping:</span>
-              <span>Free</span>
+              <span>ढुवानी:</span>
+              <span>निःशुल्क</span>
             </div>
             
             <div className="summary-row summary-total">
-              <span>Total:</span>
-              <span>₹{cart.total}</span>
+              <span>जम्मा:</span>
+              <span>रू {cart.total}</span>
             </div>
           </div>
         </div>

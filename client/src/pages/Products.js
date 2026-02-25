@@ -83,30 +83,30 @@ const Products = ({ addToCart }) => {
   return (
     <div className="products-page">
       <div className="container">
-        <h1 className="page-title">Our Products</h1>
+        <h1 className="page-title">हाम्रा उत्पादनहरू</h1>
 
         <div className="products-layout">
           {/* Filters Sidebar */}
           <aside className="filters-sidebar">
             <div className="filter-section">
-              <h3>Search</h3>
+              <h3>खोज्नुहोस्</h3>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Search products..."
+                placeholder="उत्पादन खोज्नुहोस्..."
                 value={filters.search}
                 onChange={(e) => handleFilterChange('search', e.target.value)}
               />
             </div>
 
             <div className="filter-section">
-              <h3>Category</h3>
+              <h3>श्रेणी</h3>
               <select
                 className="form-control"
                 value={filters.category}
                 onChange={(e) => handleFilterChange('category', e.target.value)}
               >
-                <option value="">All Categories</option>
+                <option value="">सबै श्रेणीहरू</option>
                 {categories.map(cat => (
                   <option key={cat.id} value={cat.id}>{cat.name}</option>
                 ))}
@@ -114,20 +114,20 @@ const Products = ({ addToCart }) => {
             </div>
 
             <div className="filter-section">
-              <h3>Price Range</h3>
+              <h3>मूल्य दायरा</h3>
               <div className="price-inputs">
                 <input
                   type="number"
                   className="form-control"
-                  placeholder="Min"
+                  placeholder="न्यूनतम"
                   value={filters.minPrice}
                   onChange={(e) => handleFilterChange('minPrice', e.target.value)}
                 />
-                <span>to</span>
+                <span>देखि</span>
                 <input
                   type="number"
                   className="form-control"
-                  placeholder="Max"
+                  placeholder="अधिकतम"
                   value={filters.maxPrice}
                   onChange={(e) => handleFilterChange('maxPrice', e.target.value)}
                 />
@@ -135,7 +135,7 @@ const Products = ({ addToCart }) => {
             </div>
 
             <button className="btn btn-secondary" onClick={clearFilters}>
-              Clear Filters
+              फिल्टर हटाउनुहोस्
             </button>
           </aside>
 
@@ -143,12 +143,12 @@ const Products = ({ addToCart }) => {
           <div className="products-content">
             {products.length === 0 ? (
               <div className="no-products">
-                <p>No products found matching your filters.</p>
+                <p>तपाईंको फिल्टरसँग मेल खाने कुनै उत्पादन फेला परेन।</p>
               </div>
             ) : (
               <>
                 <div className="products-header">
-                  <p>{products.length} Products Found</p>
+                  <p>{products.length} उत्पादनहरू फेला परे</p>
                 </div>
                 <div className="products-grid grid grid-3">
                   {products.map(product => (
