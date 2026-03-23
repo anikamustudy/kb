@@ -34,4 +34,18 @@ export const orderService = {
   getOrder: (orderId) => api.get(`/orders/order/${orderId}`)
 };
 
+export const adminService = {
+  login: (credentials) => api.post('/admin/login', credentials),
+  logout: (token) =>
+    api.post('/admin/logout', {}, { headers: { Authorization: `Bearer ${token}` } }),
+  getOrders: (token) =>
+    api.get('/admin/orders', { headers: { Authorization: `Bearer ${token}` } }),
+  updateOrderStatus: (token, orderId, status) =>
+    api.put(
+      `/admin/orders/${orderId}/status`,
+      { status },
+      { headers: { Authorization: `Bearer ${token}` } }
+    )
+};
+
 export default api;

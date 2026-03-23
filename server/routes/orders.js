@@ -1,14 +1,11 @@
 const express = require('express');
 const router = express.Router();
-
-// In-memory orders storage (in production, use database)
-let orders = [];
-let orderIdCounter = 1;
+const store = require('../data/store');
 
 // Get all orders for a user
 router.get('/:userId', (req, res) => {
   const { userId } = req.params;
-  const userOrders = orders.filter(order => order.userId === userId);
+  const userOrders = store.orders.filter(order => order.userId === userId);
   res.json(userOrders);
 });
 
@@ -17,7 +14,7 @@ router.post('/', (req, res) => {
   const { userId, items, total, shippingAddress, paymentMethod } = req.body;
   
   const newOrder = {
-    id: orderIdCounter++,
+    id: store.orderIdCounter++,
     userId,
     items,
     total,
@@ -27,13 +24,13 @@ router.post('/', (req, res) => {
     createdAt: new Date().toISOString()
   };
   
-  orders.push(newOrder);
+  store.orders.push(newOrder);
   res.status(201).json(newOrder);
 });
 
 // Get single order
 router.get('/order/:orderId', (req, res) => {
-  const order = orders.find(o => o.id === parseInt(req.params.orderId));
+  const order = store.orders.find(o => o.id === parseInt(req.params.orderId));
   
   if (!order) {
     return res.status(404).json({ error: 'Order not found' });
